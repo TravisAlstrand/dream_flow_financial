@@ -34,7 +34,8 @@ const features = [
 
 export default function Services() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <section id="services" className="bg-white py-24 sm:py-32">
+      <p className="text-red-500 text-3xl">SERVICES SECTION</p>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">
@@ -70,6 +71,6 @@ export default function Services() {
           </dl>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
