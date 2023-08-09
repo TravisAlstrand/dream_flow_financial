@@ -1,4 +1,4 @@
-import { testimonials as reviews } from "../testimonials.json";
+import { testimonials as reviews } from "../json/testimonials.json";
 
 export default function Testimonials() {
   return (
