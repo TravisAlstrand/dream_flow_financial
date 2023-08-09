@@ -18,18 +18,17 @@ export default function Header() {
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+        <div className="flex lg:flex-1 items-center">
+          <a href="#" className="-m-1.5 mr-5 p-1.5">
+            <span className="sr-only">Dream Flow Financial</span>
             <img
               className="h-8 w-auto"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
+              alt="business logo"
             />
           </a>
+          <span>(&lt;-- w/ your logo)Dream Flow Financial</span>
         </div>
-
-        <p className="text-red-500 text-3xl">HEADER / NAVIGATION</p>
 
         <div className="flex lg:hidden">
           <button

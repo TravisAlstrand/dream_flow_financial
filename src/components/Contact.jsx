@@ -1,20 +1,19 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { Switch } from "@headlessui/react";
+// import { Switch } from "@headlessui/react";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(" ");
+// }
 
 export default function Contact() {
-  const [agreed, setAgreed] = useState(false);
+  // const [agreed, setAgreed] = useState(false);
 
   return (
     <section
       id="contact"
       className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8"
     >
-      <p className="text-red-500 text-3xl">CONTACT</p>
       <div
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true"
@@ -29,10 +28,11 @@ export default function Contact() {
       </div>
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Contact sales
+          &apos;Let&apos;s Chat!&apos; or &apos;Contact Me&apos;
         </h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+          Another quick statement about how &apos;it all starts here&apos; or
+          &apos;let&apos;s start changing your life&apos;
         </p>
       </div>
       <form
@@ -75,7 +75,7 @@ export default function Contact() {
               />
             </div>
           </div>
-          <div className="sm:col-span-2">
+          {/* <div className="sm:col-span-2">
             <label
               htmlFor="company"
               className="block text-sm font-semibold leading-6 text-gray-900"
@@ -91,13 +91,13 @@ export default function Contact() {
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
-          </div>
+          </div> */}
           <div className="sm:col-span-2">
             <label
               htmlFor="email"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Email
+              Email Address
             </label>
             <div className="mt-2.5">
               <input
@@ -114,7 +114,7 @@ export default function Contact() {
               htmlFor="phone-number"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Phone number
+              Phone number (optional)
             </label>
             <div className="relative mt-2.5">
               <div className="absolute inset-y-0 left-0 flex items-center">
@@ -161,7 +161,7 @@ export default function Contact() {
               />
             </div>
           </div>
-          <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
+          {/* <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
             <div className="flex h-6 items-center">
               <Switch
                 checked={agreed}
@@ -188,7 +188,7 @@ export default function Contact() {
               </a>
               .
             </Switch.Label>
-          </Switch.Group>
+          </Switch.Group> */}
         </div>
         <div className="mt-10">
           <button

@@ -7,25 +7,25 @@ import {
 
 const features = [
   {
-    name: "Push to deploy",
+    name: "Thing 1",
     description:
       "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "SSL certificates",
+    name: "Thing 2",
     description:
       "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
     icon: LockClosedIcon,
   },
   {
-    name: "Simple queues",
+    name: "Thing 3",
     description:
       "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
     icon: ArrowPathIcon,
   },
   {
-    name: "Advanced security",
+    name: "Thing 4",
     description:
       "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
     icon: FingerPrintIcon,
@@ -35,19 +35,17 @@ const features = [
 export default function Services() {
   return (
     <section id="services" className="bg-white py-24 sm:py-32">
-      <p className="text-red-500 text-3xl">SERVICES SECTION</p>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Deploy faster
+            Save Faster
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+            Things / services we provide...
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
+            Here&apos;s maybe another small paragraph or line about how great
+            things will be after doing the following things...
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">

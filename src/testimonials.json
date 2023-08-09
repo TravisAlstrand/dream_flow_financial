@@ -1,0 +1,16 @@
+{
+  "testimonials": [
+    {
+      "reviewer-name": "Judith Black",
+      "review": "Life has never been better after working with Micheal! I gots alll the moneys now!!",
+      "reviewer-image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "reviewer-location": "Grass Valley, CA"
+    },
+    {
+      "reviewer-name": "Not-Broke Joe",
+      "review": "I aints bein all brokes no mo!",
+      "reviewer-image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "reviewer-location": "Beverly Hills, CA"
+    }
+  ]
+}
