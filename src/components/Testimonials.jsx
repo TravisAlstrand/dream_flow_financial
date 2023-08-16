@@ -63,7 +63,7 @@ export default function Testimonials() {
         autoplay={true}
         loop={true}
         autoplayDelay={10000}
-        className="rounded-xl max-w-5xl"
+        className="rounded-xl max-w-5xl h-full overflow-y-hidden"
       >
         {reviews.map((review) => {
           return (
@@ -98,7 +98,7 @@ export default function Testimonials() {
                     color="white"
                     className="mb-12 opacity-80"
                   >
-                    - {review["reviewer-location"]}
+                    {review["reviewer-location"]}
                   </Typography>
                   {/* <div className="flex justify-center gap-2">
                 <Button size="lg" color="white">
