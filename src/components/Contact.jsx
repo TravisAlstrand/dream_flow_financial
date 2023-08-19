@@ -1,30 +1,60 @@
 import { useState } from "react";
-// import { ChevronDownIcon } from "@heroicons/react/20/solid";
-// import { Switch } from "@headlessui/react";
 
-// function classNames(...classes) {
-//   return classes.filter(Boolean).join(" ");
-// }
+import { ValidationAlert } from "./ValidationAlert";
 
 export default function Contact() {
-  // const [agreed, setAgreed] = useState(false);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
+  const [isNameValid, setIsNameValid] = useState(true);
+  const [isEmailValid, setIsEmailValid] = useState(true);
+  const [isMessageValid, setIsMessageValid] = useState(true);
+  const [emailSent, setEmailSent] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
+    const allGood = validateFields();
 
-    const body = {
-      firstName,
-      lastName,
-      email,
-      phoneNumber,
-      message,
-    };
-    console.dir(body);
+    if (!allGood) {
+      setEmailSent(false);
+    } else {
+      const body = {
+        firstName,
+        lastName,
+        email,
+        phoneNumber,
+        message,
+      };
+      setEmailSent(true);
+      console.dir(body);
+      e.target.reset();
+      resetStates();
+    }
+    setTimeout(() => {
+      setEmailSent("");
+    }, 3000);
+  }
+
+  function validateFields() {
+    const firstNameValid = /^[a-z]+[\s]?[a-z]+?$/i.test(firstName);
+    const emailValid = /^[^@]+@[^@.]+\.[a-z]+$/i.test(email);
+    const messageValid = message.trim() !== "";
+
+    firstNameValid ? setIsNameValid(true) : setIsNameValid(false);
+    emailValid ? setIsEmailValid(true) : setIsEmailValid(false);
+    messageValid ? setIsMessageValid(true) : setIsMessageValid(false);
+
+    return firstNameValid && emailValid && messageValid;
+  }
+
+  function resetStates() {
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPhoneNumber("");
+    setMessage("");
   }
 
   return (
@@ -61,30 +91,55 @@ export default function Contact() {
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            <label
-              htmlFor="first-name"
-              className="block text-sm font-semibold leading-6 text-gray-900"
-            >
-              First name
-            </label>
-            <div className="mt-2.5">
-              <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                autoComplete="given-name"
-                placeholder="Jack"
-                onChange={(e) => setFirstName(e.target.value)}
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
-            </div>
+            {isNameValid ? (
+              <>
+                <label
+                  htmlFor="first-name"
+                  className="block text-sm font-semibold leading-6 text-gray-900"
+                >
+                  First Name <span className="text-red-500">*</span>
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autoComplete="given-name"
+                    placeholder="Jack"
+                    onChange={(e) => setFirstName(e.target.value)}
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </>
+            ) : (
+              <>
+                <label
+                  htmlFor="first-name"
+                  className="block text-sm font-semibold leading-6 text-gray-900"
+                >
+                  First Name{" "}
+                  <span className="text-red-500">* Please provide a name</span>
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autoComplete="given-name"
+                    placeholder="Jack"
+                    onChange={(e) => setFirstName(e.target.value)}
+                    className="block w-full rounded-md border-red-500 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-red-50"
+                  />
+                </div>
+              </>
+            )}
           </div>
           <div>
             <label
               htmlFor="last-name"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Last name
+              Last Name (optional)
             </label>
             <div className="mt-2.5">
               <input
@@ -98,41 +153,51 @@ export default function Contact() {
               />
             </div>
           </div>
-          {/* <div className="sm:col-span-2">
-            <label
-              htmlFor="company"
-              className="block text-sm font-semibold leading-6 text-gray-900"
-            >
-              Company
-            </label>
-            <div className="mt-2.5">
-              <input
-                type="text"
-                name="company"
-                id="company"
-                autoComplete="organization"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
-            </div>
-          </div> */}
           <div className="sm:col-span-2">
-            <label
-              htmlFor="email"
-              className="block text-sm font-semibold leading-6 text-gray-900"
-            >
-              Email Address
-            </label>
-            <div className="mt-2.5">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                autoComplete="email"
-                placeholder="person@example.com"
-                onChange={(e) => setEmail(e.target.value)}
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
-            </div>
+            {isEmailValid ? (
+              <>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-semibold leading-6 text-gray-900"
+                >
+                  Email Address <span className="text-red-500">*</span>
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    autoComplete="email"
+                    placeholder="person@example.com"
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </>
+            ) : (
+              <>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-semibold leading-6 text-gray-900"
+                >
+                  Email Address{" "}
+                  <span className="text-red-500">
+                    * Please provide an email
+                  </span>
+                </label>
+                <div className="mt-2.5">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    autoComplete="email"
+                    placeholder="person@example.com"
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="block w-full rounded-md border-red-500 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-red-50"
+                  />
+                </div>
+              </>
+            )}
           </div>
           <div className="sm:col-span-2">
             <label
@@ -142,24 +207,6 @@ export default function Contact() {
               Phone number (optional)
             </label>
             <div className="relative mt-2.5">
-              {/* <div className="absolute inset-y-0 left-0 flex items-center">
-                <label htmlFor="country" className="sr-only">
-                  Country
-                </label>
-                <select
-                  id="country"
-                  name="country"
-                  className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
-                >
-                  <option>US</option>
-                  <option>CA</option>
-                  <option>EU</option>
-                </select>
-                <ChevronDownIcon
-                  className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                  aria-hidden="true"
-                />
-              </div> */}
               <input
                 type="tel"
                 name="phone-number"
@@ -172,51 +219,49 @@ export default function Contact() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label
-              htmlFor="message"
-              className="block text-sm font-semibold leading-6 text-gray-900"
-            >
-              Message
-            </label>
-            <div className="mt-2.5">
-              <textarea
-                name="message"
-                id="message"
-                rows={4}
-                onChange={(e) => setMessage(e.target.value)}
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                placeholder="How can I help? ..."
-              />
-            </div>
+            {isMessageValid ? (
+              <>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-semibold leading-6 text-gray-900"
+                >
+                  Message <span className="text-red-500">*</span>
+                </label>
+                <div className="mt-2.5">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows={4}
+                    onChange={(e) => setMessage(e.target.value)}
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="How can I help? ..."
+                  />
+                </div>
+              </>
+            ) : (
+              <>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-semibold leading-6 text-gray-900"
+                >
+                  Message{" "}
+                  <span className="text-red-500">
+                    * Please provide a message
+                  </span>
+                </label>
+                <div className="mt-2.5">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows={4}
+                    onChange={(e) => setMessage(e.target.value)}
+                    className="block w-full rounded-md border-red-500 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-red-50"
+                    placeholder="How can I help? ..."
+                  />
+                </div>
+              </>
+            )}
           </div>
-          {/* <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
-            <div className="flex h-6 items-center">
-              <Switch
-                checked={agreed}
-                onChange={setAgreed}
-                className={classNames(
-                  agreed ? "bg-indigo-600" : "bg-gray-200",
-                  "flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                )}
-              >
-                <span className="sr-only">Agree to policies</span>
-                <span
-                  aria-hidden="true"
-                  className={classNames(
-                    agreed ? "translate-x-3.5" : "translate-x-0",
-                    "h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"
-                  )}
-                />
-              </Switch>
-            </div>
-            <Switch.Label className="text-sm leading-6 text-gray-600">
-              By selecting this, you agree to our{" "}
-              <a href="#" className="font-semibold text-indigo-600">
-                privacy&nbsp;policy
-              </a>
-              .
-            </Switch.Label>
-          </Switch.Group> */}
         </div>
         <div className="mt-10">
           <button
@@ -227,6 +272,7 @@ export default function Contact() {
           </button>
         </div>
       </form>
+      {emailSent === "" ? <></> : <ValidationAlert isValid={emailSent} />}
     </section>
   );
 }
