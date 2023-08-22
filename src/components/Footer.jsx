@@ -8,7 +8,7 @@ export default function Footer() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1 items-center mb-6">
-          <a href="#" className="-m-1.5 mr-5 p-1.5">
+          <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Dream Flow Financial</span>
             <img
               className="h-8 w-auto"
@@ -18,7 +18,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="grid gap-3 grid-cols-2 text-center sm:flex sm:gap-x-12 sm:flex-row">
+        <div className="hidden text-center sm:flex sm:gap-x-12 sm:flex-row">
           {navigation.map((item, index) =>
             index !== navigation.length - 1 ? (
               <a

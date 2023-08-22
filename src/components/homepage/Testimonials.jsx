@@ -13,7 +13,7 @@ export default function Testimonials() {
       <Carousel
         autoplay={true}
         loop={true}
-        autoplayDelay={10000}
+        autoplayDelay={15000}
         className="rounded-xl max-w-5xl h-full overflow-y-hidden"
       >
         {reviews.map((review) => {
@@ -51,14 +51,6 @@ export default function Testimonials() {
                   >
                     {review["reviewer-location"]}
                   </Typography>
-                  {/* <div className="flex justify-center gap-2">
-                <Button size="lg" color="white">
-                  Explore
-                </Button>
-                <Button size="lg" color="white" variant="text">
-                  Gallery
-                </Button>
-              </div> */}
                 </div>
               </div>
             </div>

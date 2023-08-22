@@ -12,7 +12,7 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1 items-center">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="#" className="-m-1.5 p-1.5 lg:mr-8">
             <span className="sr-only">Dream Flow Financial</span>
             <img
               className="h-8 w-auto"
@@ -20,8 +20,9 @@ export default function Header() {
               alt="business logo"
             />
           </a>
+          <span className="hidden lg:block">Dream Flow Financial</span>
         </div>
-        <span>Dream Flow Financial</span>
+        <span className="lg:hidden">Dream Flow Financial</span>
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -43,11 +44,6 @@ export default function Header() {
             </a>
           ))}
         </div>
-        {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div> */}
       </nav>
       <Dialog
         as="div"
@@ -89,14 +85,6 @@ export default function Header() {
                   </a>
                 ))}
               </div>
-              {/* <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
-              </div> */}
             </div>
           </div>
         </Dialog.Panel>
