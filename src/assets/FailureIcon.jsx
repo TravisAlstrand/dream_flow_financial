@@ -4,7 +4,7 @@ export function FailureIcon() {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className="h-6 w-6"
+      className="h-8 w-8"
     >
       <path
         fillRule="evenodd"

@@ -24,7 +24,7 @@ export default function Footer() {
               <a
                 key={item.name}
                 href={item.href}
-                className="mb-3 text-sm font-semibold leading-6 text-gray-900 sm:mb-0"
+                className="mb-3 font-semibold leading-6 text-gray-900 sm:mb-0"
               >
                 {item.name}
               </a>
@@ -32,7 +32,7 @@ export default function Footer() {
               <a
                 key={item.name}
                 href={item.href}
-                className="col-span-2 mb-3 text-sm font-semibold leading-6 text-gray-900 sm:mb-0"
+                className="col-span-2 mb-3 font-semibold leading-6 text-gray-900 sm:mb-0"
               >
                 {item.name}
               </a>
