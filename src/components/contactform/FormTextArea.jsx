@@ -1,4 +1,4 @@
-import { SuccessIcon } from "../assets/SuccessIcon";
+import { SuccessIcon } from "../../assets/SuccessIcon";
 
 export function FormTextArea({
   labelName,
@@ -21,7 +21,7 @@ export function FormTextArea({
         ) : (
           <>
             <span className="mx-1 text-red-500 text-xl">*</span>
-            <span className="text-red-500">Please fill this field</span>
+            <span className="text-red-500">Please provide a message</span>
           </>
         )}
       </label>

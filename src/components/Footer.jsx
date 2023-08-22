@@ -16,7 +16,6 @@ export default function Footer() {
               alt="business logo"
             />
           </a>
-          <span>(&lt;-- w/ your logo)</span>
         </div>
 
         <div className="grid gap-3 grid-cols-2 text-center sm:flex sm:gap-x-12 sm:flex-row">

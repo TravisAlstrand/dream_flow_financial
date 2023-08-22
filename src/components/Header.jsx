@@ -12,7 +12,7 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1 items-center">
-          <a href="#" className="-m-1.5 mr-5 p-1.5">
+          <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Dream Flow Financial</span>
             <img
               className="h-8 w-auto"
@@ -20,9 +20,8 @@ export default function Header() {
               alt="business logo"
             />
           </a>
-          <span>(&lt;-- w/ your logo)Dream Flow Financial</span>
         </div>
-
+        <span>Dream Flow Financial</span>
         <div className="flex lg:hidden">
           <button
             type="button"

@@ -1,4 +1,4 @@
-import { SuccessIcon } from "../assets/SuccessIcon";
+import { SuccessIcon } from "../../assets/SuccessIcon";
 
 export function FormInput({
   labelName,
@@ -27,7 +27,7 @@ export function FormInput({
         )}
       </label>
 
-      <div className="relative mt-2.5">
+      <div className="mt-2.5">
         {isValid === true || isValid === undefined ? (
           <input
             type={type}

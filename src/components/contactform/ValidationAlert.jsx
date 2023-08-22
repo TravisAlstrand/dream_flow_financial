@@ -1,7 +1,7 @@
 import { Alert } from "@material-tailwind/react";
 
-import { SuccessIcon } from "../assets/SuccessIcon";
-import { FailureIcon } from "../assets/FailureIcon";
+import { SuccessIcon } from "../../assets/SuccessIcon";
+import { FailureIcon } from "../../assets/FailureIcon";
 
 // eslint-disable-next-line react/prop-types
 export function ValidationAlert({ isValid }) {
