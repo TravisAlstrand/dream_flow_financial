@@ -1,5 +1,8 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
+import { FormInput } from "./FormInput";
+import { FormTextArea } from "./FormTextArea";
 import { ValidationAlert } from "./ValidationAlert";
 
 export default function Contact() {
@@ -8,45 +11,52 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
-  const [isNameValid, setIsNameValid] = useState(true);
-  const [isEmailValid, setIsEmailValid] = useState(true);
-  const [isMessageValid, setIsMessageValid] = useState(true);
+  const [isFirstNameValid, setIsFirstNameValid] = useState(undefined);
+  const [isLastNameValid, setIsLastNameValid] = useState(undefined);
+  const [isEmailValid, setIsEmailValid] = useState(undefined);
+  const [isPhoneValid, setIsPhoneValid] = useState(undefined);
+  const [isMessageValid, setIsMessageValid] = useState(undefined);
   const [emailSent, setEmailSent] = useState("");
+
+  const form = useRef();
 
   function handleSubmit(e) {
     e.preventDefault();
+    setEmailSent(false);
     const allGood = validateFields();
 
     if (!allGood) {
       setEmailSent(false);
+      setTimeout(() => {
+        setEmailSent("");
+      }, 3000);
     } else {
-      const body = {
-        firstName,
-        lastName,
-        email,
-        phoneNumber,
-        message,
-      };
+      sendEmail(e);
       setEmailSent(true);
-      console.dir(body);
-      e.target.reset();
-      resetStates();
     }
-    setTimeout(() => {
-      setEmailSent("");
-    }, 3000);
   }
 
   function validateFields() {
     const firstNameValid = /^[a-z]+[\s]?[a-z]+?$/i.test(firstName);
+    const lastNameValid = /^[a-z]+[\s]?[a-z]+?$/i.test(lastName);
     const emailValid = /^[^@]+@[^@.]+\.[a-z]+$/i.test(email);
+    const phoneValid =
+      /^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/.test(phoneNumber);
     const messageValid = message.trim() !== "";
 
-    firstNameValid ? setIsNameValid(true) : setIsNameValid(false);
+    firstNameValid ? setIsFirstNameValid(true) : setIsFirstNameValid(false);
+    lastNameValid ? setIsLastNameValid(true) : setIsLastNameValid(false);
     emailValid ? setIsEmailValid(true) : setIsEmailValid(false);
+    phoneValid ? setIsPhoneValid(true) : setIsPhoneValid(false);
     messageValid ? setIsMessageValid(true) : setIsMessageValid(false);
 
-    return firstNameValid && emailValid && messageValid;
+    return (
+      firstNameValid &&
+      lastNameValid &&
+      emailValid &&
+      phoneValid &&
+      messageValid
+    );
   }
 
   function resetStates() {
@@ -55,6 +65,30 @@ export default function Contact() {
     setEmail("");
     setPhoneNumber("");
     setMessage("");
+  }
+
+  function sendEmail(e) {
+    emailjs
+      .sendForm(
+        "service_3tvppwq",
+        "template_zje0qa8",
+        form.current,
+        "6g0rq8vN720O74Ji5"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setEmailSent(true);
+          e.target.reset();
+          resetStates();
+          setTimeout(() => {
+            setEmailSent("");
+          }, 3000);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   }
 
   return (
@@ -84,183 +118,62 @@ export default function Contact() {
         </p>
       </div>
       <form
-        action="#"
-        method="POST"
         className="mx-auto mt-16 max-w-xl sm:mt-20"
         onSubmit={handleSubmit}
+        ref={form}
       >
+        <p className="mb-6 italic">
+          <span className="text-red-500 text-xl">*</span> = required field
+        </p>
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            {isNameValid ? (
-              <>
-                <label
-                  htmlFor="first-name"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  First Name <span className="text-red-500">*</span>
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    autoComplete="given-name"
-                    placeholder="Jack"
-                    onChange={(e) => setFirstName(e.target.value)}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </>
-            ) : (
-              <>
-                <label
-                  htmlFor="first-name"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  First Name{" "}
-                  <span className="text-red-500">* Please provide a name</span>
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    autoComplete="given-name"
-                    placeholder="Jack"
-                    onChange={(e) => setFirstName(e.target.value)}
-                    className="block w-full rounded-md border-red-500 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-red-50"
-                  />
-                </div>
-              </>
-            )}
+            <FormInput
+              labelName={"First Name"}
+              type={"text"}
+              idName={"firstName"}
+              placeholder={"Jack"}
+              changeState={(e) => setFirstName(e)}
+              isValid={isFirstNameValid}
+            />
           </div>
           <div>
-            <label
-              htmlFor="last-name"
-              className="block text-sm font-semibold leading-6 text-gray-900"
-            >
-              Last Name (optional)
-            </label>
-            <div className="mt-2.5">
-              <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                autoComplete="family-name"
-                placeholder="Sparrow"
-                onChange={(e) => setLastName(e.target.value)}
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
-            </div>
+            <FormInput
+              labelName={"Last Name"}
+              type={"text"}
+              idName={"lastName"}
+              placeholder={"Sparrow"}
+              changeState={(e) => setLastName(e)}
+              isValid={isLastNameValid}
+            />
           </div>
           <div className="sm:col-span-2">
-            {isEmailValid ? (
-              <>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Email Address <span className="text-red-500">*</span>
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    autoComplete="email"
-                    placeholder="person@example.com"
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </>
-            ) : (
-              <>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Email Address{" "}
-                  <span className="text-red-500">
-                    * Please provide an email
-                  </span>
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    autoComplete="email"
-                    placeholder="person@example.com"
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="block w-full rounded-md border-red-500 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-red-50"
-                  />
-                </div>
-              </>
-            )}
+            <FormInput
+              labelName={"Email"}
+              type={"email"}
+              idName={"email"}
+              placeholder={"person@example.com"}
+              changeState={(e) => setEmail(e)}
+              isValid={isEmailValid}
+            />
           </div>
           <div className="sm:col-span-2">
-            <label
-              htmlFor="phone-number"
-              className="block text-sm font-semibold leading-6 text-gray-900"
-            >
-              Phone number (optional)
-            </label>
-            <div className="relative mt-2.5">
-              <input
-                type="tel"
-                name="phone-number"
-                id="phone-number"
-                autoComplete="tel"
-                placeholder="555 123 4567"
-                onChange={(e) => setPhoneNumber(e.target.value)}
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              />
-            </div>
+            <FormInput
+              labelName={"Phone Number"}
+              type={"tel"}
+              idName={"phoneNumber"}
+              placeholder={"555 123 4567"}
+              changeState={(e) => setPhoneNumber(e)}
+              isValid={isPhoneValid}
+            />
           </div>
           <div className="sm:col-span-2">
-            {isMessageValid ? (
-              <>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Message <span className="text-red-500">*</span>
-                </label>
-                <div className="mt-2.5">
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows={4}
-                    onChange={(e) => setMessage(e.target.value)}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    placeholder="How can I help? ..."
-                  />
-                </div>
-              </>
-            ) : (
-              <>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Message{" "}
-                  <span className="text-red-500">
-                    * Please provide a message
-                  </span>
-                </label>
-                <div className="mt-2.5">
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows={4}
-                    onChange={(e) => setMessage(e.target.value)}
-                    className="block w-full rounded-md border-red-500 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-red-50"
-                    placeholder="How can I help? ..."
-                  />
-                </div>
-              </>
-            )}
+            <FormTextArea
+              labelName={"Message"}
+              idName={"message"}
+              placeholder={"How can I help?..."}
+              changeState={(e) => setMessage(e)}
+              isValid={isMessageValid}
+            />
           </div>
         </div>
         <div className="mt-10">

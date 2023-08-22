@@ -1,9 +1,9 @@
-export function SuccessIcon() {
+export function SuccessIcon({ fill }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill={fill}
       className="h-6 w-6"
     >
       <path

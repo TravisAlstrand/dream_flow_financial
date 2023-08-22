@@ -7,7 +7,7 @@ import { FailureIcon } from "../assets/FailureIcon";
 export function ValidationAlert({ isValid }) {
   return isValid ? (
     <Alert
-      icon={<SuccessIcon />}
+      icon={<SuccessIcon fill={"currentColor"} />}
       className="rounded-md border-l-4 border-light-green-600 bg-light-green-500/10 font-medium text-light-green-600 max-w-xl mx-auto my-8"
     >
       Message sent successfully!
