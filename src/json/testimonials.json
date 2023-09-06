@@ -1,22 +1,34 @@
 {
   "testimonials": [
     {
-      "reviewer-name": "Judith Black",
-      "review": "Life has never been better after working with Micheal! I gots alll the moneys now!!",
+      "reviewer-name": "Sarah Johnson",
+      "review": "I can't thank Micheal at Dream Flow Financial enough! Her financial planning has transformed my life. I now have a clear path to my goals, and my financial stress has disappeared.",
       "reviewer-image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      "reviewer-location": "Grass Valley, CA"
+      "reviewer-location": "New York, NY"
     },
     {
-      "reviewer-name": "Not-Broke Joe",
-      "review": "I aints bein all brokes no mo!",
+      "reviewer-name": "John Smith",
+      "review": "Incredible investment advice! Thanks to Micheal, I've seen substantial growth in my portfolio. My future is looking brighter every day.",
       "reviewer-image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      "reviewer-location": "Beverly Hills, CA"
+      "reviewer-location": "Los Angeles, CA"
     },
     {
-      "reviewer-name": "Gunner Boi",
-      "review": "Berf berf! Woof woof, and a little bark bark bark! Sometimes I growl but most of the time I snort snort snort like a little pig bull. Lick the feet. Lick the feet. Give me something good to eat. Oh jeez, I almost forgot a bow wow. And for all my homies down the block, can I get a 'awoooooooo'?!",
+      "reviewer-name": "Emily Davis",
+      "review": "Retirement planning made easy with Dream Flow Financial. I'm now confident that I'll enjoy my golden years worry-free. Thank you!",
       "reviewer-image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      "reviewer-location": "Colfax, CA"
+      "reviewer-location": "Chicago, IL"
+    },
+    {
+      "reviewer-name": "Michael Brown",
+      "review": "Tax optimization at its best! Micheal saved me money I didn't even know I was losing. Life's better when you keep more of what you earn.",
+      "reviewer-image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "reviewer-location": "Houston, TX"
+    },
+    {
+      "reviewer-name": "Lisa Robinson",
+      "review": "I stumbled upon Dream Flow Financial and couldn't be happier. Her financial expertise has made a world of difference. My finances are in great shape, and so is my peace of mind.",
+      "reviewer-image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "reviewer-location": "Miami, FL"
     }
   ]
 }

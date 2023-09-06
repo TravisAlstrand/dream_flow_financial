@@ -1,34 +1,34 @@
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
+  HomeModernIcon,
+  BanknotesIcon,
+  RocketLaunchIcon,
+  CurrencyDollarIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
   {
-    name: "Thing 1",
+    name: "Financial Planning",
     description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
-    icon: CloudArrowUpIcon,
+      "Craft a roadmap to your financial future with our comprehensive planning services, including budgeting, goal setting, and risk assessment.",
+    icon: BanknotesIcon,
   },
   {
-    name: "Thing 2",
+    name: "Investment Advisory",
     description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
-    icon: LockClosedIcon,
+      "Maximize your investment potential with our expert guidance, tailored portfolio management, and continuous performance monitoring.",
+    icon: CurrencyDollarIcon,
   },
   {
-    name: "Thing 3",
+    name: "Retirement Planning",
     description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
-    icon: ArrowPathIcon,
+      "Secure a worry-free retirement with our specialized strategies, ensuring you'll have the funds you need to enjoy life after work.",
+    icon: HomeModernIcon,
   },
   {
-    name: "Thing 4",
+    name: "Tax Optimization",
     description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
-    icon: FingerPrintIcon,
+      "Minimize tax liabilities and keep more of your hard-earned money through our tax planning and optimization services.",
+    icon: RocketLaunchIcon,
   },
 ];
 
@@ -41,11 +41,13 @@ export default function Services() {
             Save Faster
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Things / services we provide...
+            Comprehensive Financial Solutions Tailored to You
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Here&apos;s maybe another small paragraph or line about how great
-            things will be after doing the following things...
+            Our services are designed to empower you with financial clarity and
+            peace of mind. From personalized investment strategies to retirement
+            planning, we&apos;re here to help you secure your financial future
+            and achieve your goals.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl text-left">

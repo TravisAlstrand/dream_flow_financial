@@ -1,0 +1,10 @@
+{
+  "employees": [
+    {
+      "name": "Mrs. Micheal Dunsdon",
+      "role": "CEO / Brains / Awesomeness-Spreader",
+      "imageUrl": "micheal-small.jpeg",
+      "alt": "Photo of Micheal Dunsdon"
+    }
+  ]
+}

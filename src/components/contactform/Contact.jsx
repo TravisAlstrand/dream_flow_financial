@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { FormInput } from "./FormInput";
 import { FormTextArea } from "./FormTextArea";
 import { ValidationAlert } from "./ValidationAlert";
+import { SendingSpinner } from "./SendingSpinner";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -16,13 +17,13 @@ export default function Contact() {
   const [isEmailValid, setIsEmailValid] = useState(undefined);
   const [isPhoneValid, setIsPhoneValid] = useState(undefined);
   const [isMessageValid, setIsMessageValid] = useState(undefined);
+  const [sendingEmail, setSendingEmail] = useState(false);
   const [emailSent, setEmailSent] = useState("");
 
   const form = useRef();
 
   function handleSubmit(e) {
     e.preventDefault();
-    setEmailSent(false);
     const allGood = validateFields();
 
     if (!allGood) {
@@ -31,8 +32,8 @@ export default function Contact() {
         setEmailSent("");
       }, 5000);
     } else {
+      setSendingEmail(true);
       sendEmail(e);
-      setEmailSent(true);
     }
   }
 
@@ -77,7 +78,8 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          if (result.text === "OK");
+          setSendingEmail(false);
           setEmailSent(true);
           e.target.reset();
           resetStates();
@@ -110,11 +112,12 @@ export default function Contact() {
       </div>
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          &apos;Let&apos;s Chat!&apos; or &apos;Contact Me&apos;
+          Get in Touch
         </h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Another quick statement about how &apos;it all starts here&apos; or
-          &apos;let&apos;s start changing your life&apos;
+          This is where your journey to financial success begins. Feel free to
+          reach out through the form below, and we&apos;ll be delighted to
+          assist you on your path to financial well-being.
         </p>
       </div>
       <form
@@ -122,9 +125,7 @@ export default function Contact() {
         onSubmit={handleSubmit}
         ref={form}
       >
-        <p className="mb-6 italic">
-          <span className="text-red-500 text-xl">*</span> = required field
-        </p>
+        <p className="mb-6 italic">Please fill all fields below</p>
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <FormInput
@@ -185,6 +186,7 @@ export default function Contact() {
           </button>
         </div>
       </form>
+      {sendingEmail ? <SendingSpinner /> : <></>}
       {emailSent === "" ? <></> : <ValidationAlert isValid={emailSent} />}
     </section>
   );

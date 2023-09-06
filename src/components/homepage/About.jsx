@@ -1,12 +1,4 @@
-const people = [
-  {
-    name: "Mrs. Micheal McBossLady",
-    role: "CEO / Brains / Awesomeness-Spreader",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  // More people...
-];
+import { employees } from "../../json/employees.json";
 
 export default function About() {
   return (
@@ -20,18 +12,19 @@ export default function About() {
             Meet Micheal
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Some cool facts or story or reasoning why you decided to help people
-            make their lives better
+            As the visionary founder of Dream Flow Financial, Micheal combines
+            her experience of financial expertise with a passion for empowering
+            clients to achieve their financial dreams.
           </p>
         </div>
-        <ul role="list" className="">
-          {people.map((person) => (
+        <ul role="list" className="mb-6">
+          {employees.map((person) => (
             <li key={person.name}>
               <div className="mt-10 flex flex-col items-center justify-center gap-x-6">
                 <img
-                  className="h-16 w-16 rounded-full"
+                  className="h-20 w-20 rounded-full"
                   src={person.imageUrl}
-                  alt=""
+                  alt={person.alt}
                 />
                 <div>
                   <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
@@ -45,6 +38,12 @@ export default function About() {
             </li>
           ))}
         </ul>
+        <a
+          href="/about"
+          className="rounded-md bg-indigo-600 px-3.5 py-2.5 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        >
+          See More
+        </a>
       </div>
     </section>
   );
