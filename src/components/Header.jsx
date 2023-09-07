@@ -6,7 +6,8 @@ import { navigation } from "../json/navigation.json";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md backdrop-brightness-105 shadow-xl">
+    // <header className="sticky top-0 z-50 backdrop-blur-md backdrop-brightness-105 shadow-xl">
+    <header className="sticky top-0 z-50 shadow-xl bg-white font-standard">
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -20,9 +21,13 @@ export default function Header() {
               alt="business logo"
             />
           </a>
-          <span className="hidden lg:block">Dream Flow Financial</span>
+          <span className="hidden font-cursive text-2xl lg:block">
+            Dream Flow Financial
+          </span>
         </div>
-        <span className="lg:hidden">Dream Flow Financial</span>
+        <span className="font-cursive text-lg sm:text-2xl lg:hidden">
+          Dream Flow Financial
+        </span>
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -38,7 +43,7 @@ export default function Header() {
             <a
               key={item.name}
               href={item.href}
-              className="font-semibold leading-6 text-gray-900"
+              className="font-semibold leading-6 text-gray-900 font-standard"
             >
               {item.name}
             </a>
@@ -59,7 +64,7 @@ export default function Header() {
               <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                alt="business logo"
               />
             </a>
             <button
@@ -78,7 +83,7 @@ export default function Header() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 font-standard"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}

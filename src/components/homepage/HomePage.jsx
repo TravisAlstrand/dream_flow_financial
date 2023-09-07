@@ -8,7 +8,7 @@ import Footer from "../Footer";
 
 export default function HomePage() {
   return (
-    <>
+    <div className="font-standard">
       <Header />
       <Hero />
       <Services />
@@ -16,6 +16,6 @@ export default function HomePage() {
       <Contact />
       <Testimonials />
       <Footer />
-    </>
+    </div>
   );
 }

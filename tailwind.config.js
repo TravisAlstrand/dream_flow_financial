@@ -15,6 +15,13 @@ export default withMT({
           raw: `only screen and (max-height: 480px) and (max-width: 960px)`,
         },
       },
+      backgroundImage: {
+        "hero-bg": "url('trees.jpg')",
+      },
+    },
+    fontFamily: {
+      cursive: ["Sacramento", "cursive"],
+      standard: ["Urbanist", "sans-serif"],
     },
     plugins: [require("@tailwindcss/forms")],
   },
