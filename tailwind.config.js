@@ -9,7 +9,13 @@ export default withMT({
     "./@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        wide: {
+          raw: `only screen and (max-height: 480px) and (max-width: 960px)`,
+        },
+      },
+    },
+    plugins: [require("@tailwindcss/forms")],
   },
-  plugins: [require("@tailwindcss/forms")],
 });

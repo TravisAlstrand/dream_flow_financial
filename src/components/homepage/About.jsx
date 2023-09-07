@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="bg-white py-24 sm:py-32 flex items-center justify-center text-center"
+      className="bg-white py-24 sm:py-32 flex items-center justify-center text-center wide:py-12"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
@@ -22,7 +22,7 @@ export default function About() {
             <li key={person.name}>
               <div className="mt-10 flex flex-col items-center justify-center gap-x-6">
                 <img
-                  className="h-20 w-20 rounded-full"
+                  className="h-20 w-20 rounded-full aspect-auto"
                   src={person.imageUrl}
                   alt={person.alt}
                 />
