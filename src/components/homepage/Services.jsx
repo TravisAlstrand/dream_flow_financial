@@ -1,33 +1,47 @@
 import {
-  HomeModernIcon,
   BanknotesIcon,
+  ChartBarIcon,
+  UsersIcon,
+  PresentationChartLineIcon,
   RocketLaunchIcon,
   CurrencyDollarIcon,
 } from "@heroicons/react/24/outline";
 
 const services = [
   {
-    name: "Financial Planning",
+    name: "Debt Management Strategies",
     description:
-      "Craft a roadmap to your financial future with our comprehensive planning services, including budgeting, goal setting, and risk assessment.",
+      "If you are struggling with debt, Micheal will help you develop effective strategies to manage and reduce your debt. She will provide guidance on prioritizing debt payments, negotiating with creditors, and exploring debt consolidation options. Debt does not have to be something that weighs you down or holds you back!",
     icon: BanknotesIcon,
   },
   {
-    name: "Investment Advisory",
+    name: "Personalized Budgeting Plans",
     description:
-      "Maximize your investment potential with our expert guidance, tailored portfolio management, and continuous performance monitoring.",
+      "Micheal will work closely with you to create a personalized budgeting plan tailored to your specific financial situation and goals. She will analyze your income, expenses, and financial obligations to develop a realistic and effective budget that aligns with your needs and feels effortless. She believes budgets should not feel restricting or like a chore and that each person needs different pillars in their budget.",
+    icon: PresentationChartLineIcon,
+  },
+  {
+    name: "Goal Progression",
+    description:
+      "Micheal will help you take actionable steps toward your goals, helping you live the life of your dreams! Whether it's saving for a down payment on a house, paying off student loans, or planning for retirement. Micheal will guide you through the goal-progression process and provide strategies to help you reach your objectives holding you accountable every step of the way.",
+    icon: ChartBarIcon,
+  },
+  {
+    name: "Ongoing Support and Accountability",
+    description:
+      "Micheal is committed to your long-term financial success. She provides ongoing support and accountability to ensure you stay on track with your goals. Regular check-ins and progress updates will help you stay motivated and accountable to taking action moving you toward the life of your dreams.",
+    icon: UsersIcon,
+  },
+  {
+    name: "Tax Support and Guidance",
+    description:
+      "As a Certified Public Accountant, CPA, Micheal also offers tax support and guidance to help you navigate the complexities of tax planning and preparation. Micheal will review your tax situation, help you identify potential deductions and credits, and guide you through the tax filing process. She will work with you to ensure that you are maximizing your tax savings and minimizing any potential liabilities. Her goal is to help you optimize your tax situation and keep more money in your pocket.",
     icon: CurrencyDollarIcon,
   },
   {
-    name: "Retirement Planning",
+    name: "And so much more!",
     description:
-      "Secure a worry-free retirement with our specialized strategies, ensuring you'll have the funds you need to enjoy life after work.",
-    icon: HomeModernIcon,
-  },
-  {
-    name: "Tax Optimization",
-    description:
-      "Minimize tax liabilities and keep more of your hard-earned money through our tax planning and optimization services.",
+      "In addition to the above specialties, Micheal offers unique financial coaching designed to support you to break through any ingrained blocks that are holding you back from creating financial success and the life of your dreams. From workbooks, financial education, money and net worth tracking tools, investment information, retirement planning, and more you will be held and supported throughout your entire financial journey flowing into the life of your dreams with ease!",
     icon: RocketLaunchIcon,
   },
 ];
