@@ -12,17 +12,17 @@ export function FormInput({
     <>
       <label
         htmlFor={idName}
-        className="flex font-semibold leading-6 text-gray-900"
+        className="flex font-semibold leading-6 text-ltrGray-dark"
       >
         {labelName}
         {isValid === undefined ? (
-          <span className="mx-1 text-red-500 text-xl">*</span>
+          <span className="mx-1 text-error text-xl">*</span>
         ) : isValid === true ? (
-          <SuccessIcon fill={"lightGreen"} />
+          <SuccessIcon fill={"#4ade80"} />
         ) : (
           <>
-            <span className="mx-1 text-red-500 text-xl">*</span>
-            <span className="text-red-500">Please fill this field</span>
+            <span className="mx-1 text-error text-xl">*</span>
+            <span className="text-error">Please fill this field</span>
           </>
         )}
       </label>
@@ -35,7 +35,7 @@ export function FormInput({
             id={idName}
             placeholder={placeholder}
             onChange={(e) => changeState(e.target.value)}
-            className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-light-blue-600 sm:leading-6"
+            className="block w-full rounded-md border-0 px-3.5 py-2 text-ltrGray-dark shadow-sm ring-1 ring-inset ring-ltrGray-light placeholder:text-ltrGray-light focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6 transition-colors duration-300"
           />
         ) : (
           <input
@@ -44,7 +44,7 @@ export function FormInput({
             id={idName}
             placeholder={placeholder}
             onChange={(e) => changeState(e.target.value)}
-            className="block w-full rounded-md border-red-500 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-light-blue-600 sm:leading-6 bg-red-50"
+            className="block w-full rounded-md border-error px-3.5 py-2 text-ltrGray-dark shadow-sm ring-1 ring-inset ring-ltrGray-light placeholder:text-ltrGray-light focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6 bg-error-light transition-colors duration-300"
           />
         )}
       </div>

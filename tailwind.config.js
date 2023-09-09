@@ -19,6 +19,28 @@ export default withMT({
         "hero-bg": "url('trees.jpg')",
       },
     },
+    colors: {
+      primary: {
+        DEFAULT: "#38bdf8",
+        light: "#7dd3fc",
+        dark: "#0369a1",
+      },
+      secondary: {
+        DEFAULT: "#4ade80",
+        light: "#86efac",
+        dark: "#15803d",
+      },
+      ltrGray: {
+        DEFAULT: "#4b5563",
+        light: "#6b7280",
+        dark: "#111827",
+      },
+      error: {
+        DEFAULT: "#ef4444",
+        light: "#fef2f2",
+        dark: "#b91c1c",
+      },
+    },
     fontFamily: {
       cursive: ["Sacramento", "cursive"],
       standard: ["Urbanist", "sans-serif"],

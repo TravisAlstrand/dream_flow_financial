@@ -54,13 +54,13 @@ export default function Services() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="font-semibold leading-7 text-green-600 text-xl">
+          <h2 className="font-semibold leading-7 text-secondary text-xl">
             Save Faster
           </h2>
-          <p className="mt-2 text-3xl font-bold text-light-blue-600 sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold text-primary sm:text-4xl">
             Comprehensive Financial Solutions Tailored to You
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-ltrGray">
             Our services are designed to empower you with financial clarity and
             peace of mind. From personalized investment strategies to retirement
             planning, we&apos;re here to help you secure your financial future
@@ -71,16 +71,16 @@ export default function Services() {
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
             {services.map((service) => (
               <div key={service.name} className="relative pl-16">
-                <dt className="text-lg font-semibold leading-7 tracking-wide text-light-blue-600">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-green-600">
+                <dt className="text-lg font-semibold leading-7 tracking-wide text-primary">
+                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-secondary">
                     <service.icon
-                      className="h-6 w-6 text-white"
+                      className="h-6 w-6 text-ltrGray-dark"
                       aria-hidden="true"
                     />
                   </div>
                   {service.name}
                 </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">
+                <dd className="mt-2 text-base leading-7 text-ltrGray">
                   {service.description}
                 </dd>
               </div>

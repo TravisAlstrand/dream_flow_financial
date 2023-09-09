@@ -7,7 +7,7 @@ export default function Testimonials() {
       id="testimonials"
       className="flex flex-col items-center relative isolate overflow-hidden h-screen bg-white px-6 py-24 sm:py-32 lg:px-8 wide:h-fit wide:py-12"
     >
-      <h2 className="mb-6 text-3xl font-bold tracking-tight text-light-blue-600 sm:text-4xl">
+      <h2 className="mb-6 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
         Testimonials
       </h2>
       <Carousel

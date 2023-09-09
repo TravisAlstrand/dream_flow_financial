@@ -10,24 +10,24 @@ export default function Footer() {
         <div className="flex items-center mb-4">
           <a
             href="#"
-            className="rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-blue-600"
+            className="rounded-md focus-styles focus-visible:outline-primary"
           >
             <span className="sr-only">Dream Flow Financial</span>
             <img
               className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=lightBlue&shade=600"
+              src="https://tailwindui.com/img/logos/mark.svg?color=lightBlue&shade=500"
               alt="business logo"
             />
           </a>
         </div>
 
         <div className="hidden text-center md:flex">
-          <div className="flex gap-x-8 border-r-2 border-gray-900 pr-6">
+          <div className="flex gap-x-8 border-r-2 border-ltrGray pr-6">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="rounded-md p-1 font-semibold text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-blue-600 hover:bg-gray-100 transition-colors duration-300"
+                className="rounded-md p-1 font-semibold text-ltrGray focus-styles focus-visible:outline-primary hover:bg-gray-100 transition-colors duration-300"
               >
                 {item.name}
               </a>
@@ -38,7 +38,7 @@ export default function Footer() {
               <a
                 key={item.name}
                 href={item.href}
-                className="rounded-md p-1 font-semibold text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-blue-600 hover:bg-gray-100 transition-colors duration-300"
+                className="rounded-md p-1 font-semibold text-ltrGray focus-styles focus-visible:outline-primary hover:bg-gray-100 transition-colors duration-300"
               >
                 {item.name}
               </a>

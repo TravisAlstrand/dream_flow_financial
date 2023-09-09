@@ -111,10 +111,10 @@ export default function Contact() {
         />
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-light-blue-600 sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
           Get in Touch
         </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
+        <p className="mt-2 text-lg leading-8 text-ltrGray">
           This is where your journey to financial success begins. Feel free to
           reach out through the form below, and we&apos;ll be delighted to
           assist you on your path to financial well-being.
@@ -125,7 +125,9 @@ export default function Contact() {
         onSubmit={handleSubmit}
         ref={form}
       >
-        <p className="mb-6 italic">Please fill all fields below</p>
+        <p className="mb-6 italic text-ltrGray-dark">
+          Please fill all fields below
+        </p>
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <FormInput
@@ -180,7 +182,7 @@ export default function Contact() {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-green-600 px-3.5 py-2.5 text-center font-semibold text-white shadow-sm hover:bg-green-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-blue-600 transition-colors duration-300"
+            className="block w-full rounded-md bg-secondary px-3.5 py-2.5 text-center font-semibold text-ltrGray-dark shadow-sm hover:bg-secondary-light focus-styles focus-visible:outline-primary transition-colors duration-300"
           >
             Let&apos;s talk
           </button>
