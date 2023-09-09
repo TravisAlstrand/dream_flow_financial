@@ -17,7 +17,7 @@ export function FormTextArea({
         {isValid === undefined ? (
           <span className="mx-1 text-error text-xl">*</span>
         ) : isValid === true ? (
-          <SuccessIcon fill={"lightGreen"} />
+          <SuccessIcon fill={"#4ade80"} />
         ) : (
           <>
             <span className="mx-1 text-error text-xl">*</span>
