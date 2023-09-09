@@ -1,10 +1,10 @@
 import About from "./About";
 import Contact from "../contactform/Contact";
-import Header from "../Header";
+import Header from "./Header";
 import Hero from "./Hero";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
-import Footer from "../Footer";
+import Footer from "./Footer";
 
 export default function HomePage() {
   return (

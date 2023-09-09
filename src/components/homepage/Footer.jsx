@@ -1,4 +1,4 @@
-import { navigation, navigation2 } from "../json/navigation.json";
+import { homeNavigation, homeNavigation2 } from "../../json/navigation.json";
 
 export default function Footer() {
   return (
@@ -23,7 +23,7 @@ export default function Footer() {
 
         <div className="hidden text-center md:flex">
           <div className="flex gap-x-8 border-r-2 border-ltrGray pr-6">
-            {navigation.map((item) => (
+            {homeNavigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
@@ -34,7 +34,7 @@ export default function Footer() {
             ))}
           </div>
           <div className="flex gap-x-8 pl-6">
-            {navigation2.map((item) => (
+            {homeNavigation2.map((item) => (
               <a
                 key={item.name}
                 href={item.href}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { navigation, navigation2 } from "../json/navigation.json";
+import { homeNavigation, homeNavigation2 } from "../../json/navigation.json";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -41,7 +41,7 @@ export default function Header() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-8 border-r-2 border-ltrGray pr-6">
-          {navigation.map((item) => (
+          {homeNavigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
@@ -52,7 +52,7 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:gap-x-8 pl-6">
-          {navigation2.map((item) => (
+          {homeNavigation2.map((item) => (
             <a
               key={item.name}
               href={item.href}
@@ -95,7 +95,7 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500">
               <div className="space-y-2 py-6">
-                {navigation.map((item) => (
+                {homeNavigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
@@ -107,7 +107,7 @@ export default function Header() {
                 ))}
               </div>
               <div className="space-y-2 py-6">
-                {navigation2.map((item) => (
+                {homeNavigation2.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}

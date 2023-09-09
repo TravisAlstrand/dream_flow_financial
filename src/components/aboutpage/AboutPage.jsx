@@ -1,11 +1,11 @@
-import Header from "../Header";
+import Header2 from "../Header2";
 import Contact from "../contactform/Contact";
-import Footer from "../Footer";
+import Footer2 from "../Footer2";
 
 export default function AboutPage() {
   return (
     <>
-      <Header />
+      <Header2 />
       <div className="mx-auto px-6 mt-24 max-w-2xl text-center">
         <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
           Meet Micheal
@@ -46,7 +46,7 @@ export default function AboutPage() {
         />
       </div>
       <Contact />
-      <Footer />
+      <Footer2 />
     </>
   );
 }
