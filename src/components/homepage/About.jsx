@@ -8,7 +8,7 @@ export default function About() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-light-blue-600 sm:text-4xl">
             Meet Micheal
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -30,7 +30,7 @@ export default function About() {
                   <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
                     {person.name}
                   </h3>
-                  <p className="font-semibold leading-6 text-indigo-600">
+                  <p className="font-semibold leading-6 text-light-blue-600">
                     {person.role}
                   </p>
                 </div>
@@ -40,7 +40,7 @@ export default function About() {
         </ul>
         <a
           href="/about"
-          className="rounded-md bg-indigo-600 px-3.5 py-2.5 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          className="rounded-md bg-green-600 px-3.5 py-2.5 font-semibold text-white shadow-sm hover:bg-green-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-blue-600 transition-colors duration-300"
         >
           See More
         </a>

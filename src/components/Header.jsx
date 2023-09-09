@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { navigation } from "../json/navigation.json";
+import { navigation, navigation2 } from "../json/navigation.json";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,19 +13,22 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1 items-center">
-          <a href="#" className="-m-1.5 p-1.5 lg:mr-8">
+          <a
+            href="#"
+            className="rounded-md -m-1.5 p-1.5 lg:mr-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-blue-600"
+          >
             <span className="sr-only">Dream Flow Financial</span>
             <img
               className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              src="https://tailwindui.com/img/logos/mark.svg?color=lightBlue&shade=600"
               alt="business logo"
             />
           </a>
-          <span className="hidden font-cursive text-2xl lg:block">
+          <span className="hidden text-center font-cursive text-light-blue-800 text-2xl lg:block">
             Dream Flow Financial
           </span>
         </div>
-        <span className="font-cursive text-lg sm:text-2xl lg:hidden">
+        <span className="font-cursive text-center text-lg text-light-blue-800 sm:text-2xl lg:hidden">
           Dream Flow Financial
         </span>
         <div className="flex lg:hidden">
@@ -38,12 +41,23 @@ export default function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-8 border-r-2 border-gray-900 pr-6">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="font-semibold leading-6 text-gray-900 font-standard"
+              className="rounded-md p-1 font-semibold text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-blue-600 hover:bg-gray-100 transition-colors duration-300"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+        <div className="hidden lg:flex lg:gap-x-8 pl-6">
+          {navigation2.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              className="rounded-md p-1 font-semibold text-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-blue-600 hover:bg-gray-100 transition-colors duration-300"
             >
               {item.name}
             </a>
@@ -59,11 +73,14 @@ export default function Header() {
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a
+              href="#"
+              className="rounded-md -m-1.5 p-1.5 lg:mr-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-blue-600"
+            >
               <span className="sr-only">Dream Flow Financial</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="https://tailwindui.com/img/logos/mark.svg?color=lightBlue&shade=600"
                 alt="business logo"
               />
             </a>
@@ -80,6 +97,18 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 font-standard"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+              <div className="space-y-2 py-6">
+                {navigation2.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
