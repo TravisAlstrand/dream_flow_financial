@@ -45,6 +45,9 @@ export default withMT({
       cursive: ["Sacramento", "cursive"],
       standard: ["Urbanist", "sans-serif"],
     },
-    plugins: [require("@tailwindcss/forms")],
+    plugins: [
+      require("@tailwindcss/forms"),
+      require("@tailwindcss/aspect-ratio"),
+    ],
   },
 });

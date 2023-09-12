@@ -1,4 +1,4 @@
-import { testimonials as reviews } from "../../json/testimonials.json";
+import { carouselTestimonials as reviews } from "../../json/testimonials.json";
 import { Carousel, Typography } from "@material-tailwind/react";
 
 export default function Testimonials() {
