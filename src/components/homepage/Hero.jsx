@@ -20,8 +20,7 @@ export default function Hero() {
               Your Path to Financial Success Starts Here
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Gain peace of mind and achieve your financial goals with our
-              trusted advisory services.
+              Gain peace of mind and achieve your financial goals.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

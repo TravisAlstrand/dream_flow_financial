@@ -14,7 +14,7 @@ export default function Testimonials() {
         autoplay={true}
         loop={true}
         autoplayDelay={15000}
-        className="rounded-xl max-w-5xl h-full overflow-y-hidden"
+        className="rounded-xl max-w-5xl h-full overflow-y-hidden mb-8"
       >
         {reviews.map((review) => {
           return (
@@ -61,6 +61,12 @@ export default function Testimonials() {
           );
         })}
       </Carousel>
+      <a
+        href="/testimonials"
+        className="rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm hover:bg-secondary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors duration-300"
+      >
+        See more <span aria-hidden="true">→</span>
+      </a>
     </section>
   );
 }

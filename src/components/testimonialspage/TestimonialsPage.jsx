@@ -9,7 +9,7 @@ export default function TestimonialsPage() {
   return (
     <>
       <Header2 />
-      <div className="mx-auto px-6 mt-24 mb-16 max-w-2xl text-center">
+      <div className="mx-auto px-6 mt-24 mb-16 max-w-5xl text-center">
         <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
           Testimonials
         </h1>
@@ -18,6 +18,7 @@ export default function TestimonialsPage() {
             <TestimonialCard
               name={testimonial.name}
               src={testimonial.src}
+              quotes={testimonial.quotes}
               key={index}
             />
           );

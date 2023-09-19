@@ -1,16 +1,16 @@
 {
   "carouselTestimonials": [
     {
-      "reviewer-name": "Sarah Johnson",
-      "review": "I can't thank Micheal at Dream Flow Financial enough! Her financial planning has transformed my life. I now have a clear path to my goals, and my financial stress has disappeared.",
+      "reviewer-name": "Rachel",
+      "review": "I was drowning financially, living paycheck to paycheck. It was very obvious that her goal was to help pull me out of the pit I dug myself into. Working with Micheal has been absolutely life changing!",
       "reviewer-image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      "reviewer-location": "New York, NY"
+      "reviewer-location": "Grass Valley, CA"
     },
     {
-      "reviewer-name": "John Smith",
-      "review": "Incredible investment advice! Thanks to Micheal, I've seen substantial growth in my portfolio. My future is looking brighter every day.",
+      "reviewer-name": "Beth",
+      "review": "I was nervous before the session - she put me right at ease. She was genuinely enthusiastic about my life and financial goals. Can't recommend her highly enough!",
       "reviewer-image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      "reviewer-location": "Los Angeles, CA"
+      "reviewer-location": "Grass Valley, CA"
     },
     {
       "reviewer-name": "Emily Davis",
@@ -34,11 +34,21 @@
   "fullTestimonials": [
     {
       "name": "Beth",
-      "src": "https://www.youtube.com/embed/rzCJzZYIkXA?si=HEmJQNwxh0QXNWXF"
+      "src": "https://www.youtube.com/embed/rzCJzZYIkXA?si=HEmJQNwxh0QXNWXF",
+      "quotes": [
+        "I was nervous before the session - she put me right at ease.",
+        "She was genuinely enthusiastic about my life and financial goals.",
+        "Can't recommend her highly enough!"
+      ]
     },
     {
       "name": "Rachel",
-      "src": "https://www.youtube.com/embed/YOXdP17Cr6Q?si=wllcel5UNbb9AtJd"
+      "src": "https://www.youtube.com/embed/YOXdP17Cr6Q?si=wllcel5UNbb9AtJd",
+      "quotes": [
+        "I was drowning financially, living paycheck to paycheck.",
+        "It was very obvious that her goal was to help pull me out of the pit I dug myself into.",
+        "Working with Micheal has been absolutely life changing!"
+      ]
     }
   ]
 }
