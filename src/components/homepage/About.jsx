@@ -54,7 +54,7 @@ export default function About() {
           href="/about"
           className="rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm hover:bg-secondary-light focus-styles focus-visible:outline-primary transition-colors duration-300"
         >
-          See More
+          Learn More About Micheal
         </a>
       </div>
     </section>
