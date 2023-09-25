@@ -1,4 +1,10 @@
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
 export default function Hero() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
   return (
     <div id="home" className="bg-white">
       <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -14,7 +20,14 @@ export default function Hero() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 wide:py-24">
+        <div
+          className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 wide:py-24"
+          ref={ref}
+          style={{
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          }}
+        >
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
               Your Path to Financial Success Starts Here

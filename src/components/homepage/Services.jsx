@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import {
   BanknotesIcon,
   ChartBarIcon,
@@ -47,12 +49,22 @@ const services = [
 ];
 
 export default function Services() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
   return (
     <section
       id="services"
       className="bg-white py-24 sm:py-32 text-center wide:py-12"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div
+        className="mx-auto max-w-7xl px-6 lg:px-8"
+        ref={ref}
+        style={{
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+        }}
+      >
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="font-semibold leading-7 text-secondary text-xl">
             Save Faster

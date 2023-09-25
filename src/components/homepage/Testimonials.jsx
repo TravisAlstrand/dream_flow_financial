@@ -1,11 +1,21 @@
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import { carouselTestimonials as reviews } from "../../json/testimonials.json";
 import { Carousel, Typography } from "@material-tailwind/react";
 
 export default function Testimonials() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
   return (
     <section
       id="testimonials"
       className="flex flex-col items-center relative isolate overflow-hidden h-screen bg-white px-6 py-24 sm:py-32 lg:px-8 wide:h-fit wide:py-12"
+      ref={ref}
+      style={{
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+      }}
     >
       <h2 className="mb-6 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
         Testimonials

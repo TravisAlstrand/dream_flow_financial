@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { FormInput } from "./FormInput";
@@ -21,6 +22,8 @@ export default function Contact() {
   const [emailSent, setEmailSent] = useState("");
 
   const form = useRef();
+  const ref = useRef(null);
+  const isInView = useInView(ref);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -74,7 +77,7 @@ export default function Contact() {
         "service_3tvppwq",
         "template_zje0qa8",
         form.current,
-        "6g0rq8vN720O74Ji5",
+        "6g0rq8vN720O74Ji5"
       )
       .then(
         (result) => {
@@ -89,7 +92,7 @@ export default function Contact() {
         },
         (error) => {
           console.log(error.text);
-        },
+        }
       );
   }
 
@@ -97,6 +100,11 @@ export default function Contact() {
     <section
       id="contact"
       className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8 wide:py-12"
+      ref={ref}
+      style={{
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+      }}
     >
       <div
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
