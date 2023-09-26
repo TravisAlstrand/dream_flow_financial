@@ -46,11 +46,11 @@ export default function Testimonials() {
                   >
                     &quot;{review.review}&quot;
                   </Typography>
-                  <img
+                  {/* <img
                     className="mx-auto mb-6 h-20 w-20 rounded-full font-standard"
                     src={review["reviewer-image"]}
                     alt={review["reviewer-name"]}
-                  />
+                  /> */}
                   <Typography
                     variant="h3"
                     color="white"
@@ -58,13 +58,13 @@ export default function Testimonials() {
                   >
                     {review["reviewer-name"]}
                   </Typography>
-                  <Typography
+                  {/* <Typography
                     variant="lead"
                     color="white"
                     className="mb-12 opacity-80 font-standard font-bold"
                   >
                     {review["reviewer-location"]}
-                  </Typography>
+                  </Typography> */}
                 </div>
               </div>
             </div>
