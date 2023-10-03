@@ -1,16 +1,17 @@
 {
   "homeNavigation": [
     { "name": "Home", "href": "/#" },
-    { "name": "Services", "href": "/#services" },
     { "name": "Contact", "href": "/#contact" }
   ],
   "homeNavigation2": [
     { "name": "About", "href": "/about" },
+    { "name": "Services", "href": "/services" },
     { "name": "Testimonials", "href": "/testimonials" }
   ],
   "otherNavigation": [
     { "name": "Home", "href": "/" },
     { "name": "About", "href": "/about" },
+    { "name": "Services", "href": "/services" },
     { "name": "Testimonials", "href": "/testimonials" }
   ]
 }

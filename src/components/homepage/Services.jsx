@@ -74,9 +74,10 @@ export default function Services() {
           </p>
           <p className="mt-6 text-lg leading-8 text-ltrGray">
             Micheal&apos;s services are designed to empower you with financial
-            clarity and peace of mind. From personalized investment strategies
-            to retirement planning, she&apos;s here to help you secure your
-            financial future and achieve your goals.
+            clarity and peace of mind. From personalized budgets, debt
+            management plans, and savings for your goals, she&apos;s here to
+            support your financial future and help you experience the life of
+            your dreams.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl text-left">
