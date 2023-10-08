@@ -6,8 +6,8 @@ import HomePage from "./components/homepage/HomePage";
 import ErrorPage from "./components/errorpage/ErrorPage";
 import AboutPage from "./components/aboutpage/AboutPage";
 import TestimonialsPage from "./components/testimonialspage/TestimonialsPage";
+import ServicesPage from "./components/servicespage/Services";
 import "./index.css";
-import ServicesPage from "./components/servicespage/servicespage";
 
 const router = createBrowserRouter([
   {

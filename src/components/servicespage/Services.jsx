@@ -22,25 +22,27 @@ export default function ServicesPage() {
         <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl mb-10">
           Services
         </h1>
-        <p>Welcome to DreamFlow 1 on 1 Financial Coaching Services!</p>
-        <p>
+        <h2 className="font-semibold leading-7 text-secondary text-xl">
+          Welcome to DreamFlow 1 on 1 Financial Coaching Services!
+        </h2>
+        <p className="mb-10 text-lg leading-8 text-ltrGray">
           At DreamFlow Financial Coaching, we understand that everyone&apos;s
           financial situation is unique. That&apos;s why we offer personalized 1
           on 1 financial coaching services to support you so you can achieve
           your financial goals and gain control over your finances.
         </p>
-        <p>
+        <p className="mb-10 text-lg leading-8 text-ltrGray">
           Micheal is here to guide you through every step of your financial
           journey. Whether you&apos;re struggling with debt, want to save for a
           specific goal, or need help creating a budget, Micheal will provide
           you with the knowledge, tools, and support to thrive.
         </p>
-        <h2>
+        <h2 className="font-semibold leading-7 text-secondary text-xl">
           Here&apos;s what you can expect from our 1 on 1 financial coaching
           services:
         </h2>
         <ol>
-          <li>
+          <li className="mb-10 text-lg leading-8 text-ltrGray">
             Personalized Financial Assessment: Micheal will start with a free
             financial coaching session, discussing your goals, dreams, current
             financial situation, and financial knowledge and experience. This
@@ -48,7 +50,7 @@ export default function ServicesPage() {
             financial goals. By understanding your unique circumstances, we can
             tailor our coaching to meet your specific needs.
           </li>
-          <li>
+          <li className="mb-10 text-lg leading-8 text-ltrGray">
             Goal Setting and Action Planning: After the first free session,
             Micheal works on an action plan to help align your money with goals.
             There are homework assignments to help you look at your money to
@@ -58,7 +60,7 @@ export default function ServicesPage() {
             house, or plan for retirement, Micheal will help you create a
             step-by-step action plan to reach your goals.
           </li>
-          <li>
+          <li className="mb-10 text-lg leading-8 text-ltrGray">
             Budgeting and Cash Flow Management: One of the key aspects of
             financial success is effective budgeting and cash flow management.
             Micheal will help you create a personalized budget that aligns with
@@ -67,7 +69,7 @@ export default function ServicesPage() {
             income, maximize your savings and make progress toward your goals
             and the life of your dreams.
           </li>
-          <li>
+          <li className="mb-10 text-lg leading-8 text-ltrGray">
             Debt Management and Elimination: If you&apos;re burdened with debt,
             Micheal will create a personalized debt management plan and provide
             you with strategies to manage and eliminate it. She will help you
@@ -75,7 +77,7 @@ export default function ServicesPage() {
             creditors if necessary, and develop a plan pay off the debt that
             feels like a burden, saving you thousands of dollars in interest!
           </li>
-          <li>
+          <li className="mb-10 text-lg leading-8 text-ltrGray">
             Investment and Retirement Planning: If investing and retirement make
             you feel intimidated, like you&apos;re behind and want to hide under
             the covers, you are not alone! Micheal will provide you with the
@@ -84,7 +86,7 @@ export default function ServicesPage() {
             Setting up your money to work for you and earn compounding interest
             is a crucial step toward the life of your dreams.
           </li>
-          <li>
+          <li className="mb-10 text-lg leading-8 text-ltrGray">
             Ongoing Support and Accountability: Micheal is committed to your
             long-term financial success. She will provide ongoing support,
             answer your questions, and hold you accountable to your financial
@@ -92,13 +94,13 @@ export default function ServicesPage() {
             obstacles along the way.
           </li>
         </ol>
-        <p>
+        <p className="mb-10 text-lg leading-8 text-ltrGray">
           Investing in 1 on 1 financial coaching is an investment in your
           future. Micheal is dedicated to empowering you with the knowledge and
           skills to take control of your finances and build the life of your
           dreams.
         </p>
-        <p>
+        <p className="mb-10 text-lg leading-8 text-ltrGray">
           Ready to take the first step towards financial freedom? Book your
           first free session below. If you have more questions, contact us today
           with the form below. Let&apos;s work together to transform your
