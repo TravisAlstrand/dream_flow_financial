@@ -42,8 +42,8 @@ export default withMT({
       },
     },
     fontFamily: {
-      cursive: ["Sacramento", "cursive"],
-      standard: ["Urbanist", "sans-serif"],
+      cursive: ["Satisfy", "cursive"],
+      standard: ["Montserrat", "sans-serif"],
     },
     plugins: [
       require("@tailwindcss/forms"),

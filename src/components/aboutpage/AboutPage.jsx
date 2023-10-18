@@ -21,41 +21,46 @@ export default function AboutPage() {
   return (
     <>
       <Header2 />
-      <div
-        className="mx-auto px-6 mt-24 max-w-2xl text-center"
+      <main
+        className="mx-auto px-6 mt-24 max-w-4xl text-center"
         ref={ref}
         style={{
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
         }}
       >
-        <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl mb-10">
+        <h1 className="text-4xl font-cursive font-bold tracking-tight text-primary sm:text-6xl mb-10">
           Meet Micheal
         </h1>
-        <img
-          ref={ref1}
-          style={{
-            opacity: isInView1 ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
-          }}
-          className="aspect-auto mb-10 px-6"
-          src="micheal-full.jpeg"
-          alt="photo of Micheal Dunsdon"
-        />
-        <p
-          ref={ref2}
-          style={{
-            opacity: isInView2 ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
-          }}
-          className="mb-10 text-lg leading-8 text-ltrGray"
-        >
-          Welcome to <strong>Dream Flow Financial</strong>, where financial
-          empowerment meets expertise. Founded by Micheal Dunsdon, a visionary
-          in the world of finance, this company was born from a deep-rooted
-          passion for helping individuals and families achieve their financial
-          dreams.
-        </p>
+        <div className="flex flex-col lg:flex-row">
+          <img
+            ref={ref1}
+            style={{
+              opacity: isInView1 ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            }}
+            className="mb-10 px-6 lg:w-1/2"
+            src="images/splash.jpg"
+            alt="Micheal in a river splashing the water"
+          />
+          <p
+            ref={ref2}
+            style={{
+              opacity: isInView2 ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            }}
+            className="mb-10 text-lg leading-8 text-ltrGray lg:w-1/2 lg:text-left"
+          >
+            Welcome to{" "}
+            <strong className="font-cursive text-primary">
+              Dream Flow Financial
+            </strong>
+            , where financial empowerment meets expertise. Founded by Micheal
+            Dunsdon, a visionary in the world of finance, this company was born
+            from a deep-rooted passion for helping individuals and families
+            achieve their financial dreams.
+          </p>
+        </div>
         <p
           ref={ref3}
           style={{
@@ -73,33 +78,39 @@ export default function AboutPage() {
           actionable financial advice sets the foundation for her company&apos;s
           mission.
         </p>
-        <p
-          ref={ref4}
-          style={{
-            opacity: isInView4 ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
-          }}
-          className="mb-10 text-lg leading-8 text-ltrGray"
-        >
-          At <strong>Dream Flow Financial</strong>, we believe that financial
-          success is within reach for everyone. Whether you&apos;re planning for
-          retirement, seeking investment opportunities, optimizing your taxes,
-          or simply looking for comprehensive financial planning, our team is
-          here to guide you every step of the way. Join us on your journey
-          towards a brighter, more secure financial future, where your goals are
-          our goals, and your success is our success.
-        </p>
-        <img
-          ref={ref5}
-          style={{
-            opacity: isInView5 ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
-          }}
-          className="aspect-auto px-6"
-          src="micheal-and-ryan.jpeg"
-          alt="photo of Micheal and husband Ryan"
-        />
-      </div>
+        <div className="flex flex-col lg:flex-row">
+          <p
+            ref={ref4}
+            style={{
+              opacity: isInView4 ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            }}
+            className="mb-10 text-lg leading-8 text-ltrGray lg:w-1/2 lg:text-right"
+          >
+            At{" "}
+            <strong className="font-cursive text-primary">
+              Dream Flow Financial
+            </strong>
+            , we believe that financial success is within reach for everyone.
+            Whether you&apos;re planning for retirement, seeking investment
+            opportunities, optimizing your taxes, or simply looking for
+            comprehensive financial planning, our team is here to guide you
+            every step of the way. Join us on your journey towards a brighter,
+            more secure financial future, where your goals are our goals, and
+            your success is our success.
+          </p>
+          <img
+            ref={ref5}
+            style={{
+              opacity: isInView5 ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            }}
+            className="px-6 lg:w-1/2 lg:max-h-[275px]"
+            src="images/red-coat2.jpg"
+            alt="photo of Micheal raising hands freely"
+          />
+        </div>
+      </main>
       <Contact />
       <Footer2 />
     </>

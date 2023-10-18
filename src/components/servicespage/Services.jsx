@@ -12,14 +12,14 @@ export default function ServicesPage() {
     <>
       <Header2 />
       <div
-        className="mx-auto px-6 mt-24 max-w-2xl text-center"
+        className="mx-auto px-6 mt-24 max-w-4xl text-center"
         ref={ref}
         style={{
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
         }}
       >
-        <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl mb-10">
+        <h1 className="text-4xl font-cursive font-bold tracking-tight text-primary sm:text-6xl mb-10">
           Services
         </h1>
         <h2 className="font-semibold leading-7 text-secondary text-xl">

@@ -20,7 +20,7 @@ export default function About() {
         }}
       >
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+          <h2 className="text-3xl font-cursive font-bold tracking-tight text-primary sm:text-4xl">
             Meet Micheal
           </h2>
           <p className="mt-6 text-lg leading-8 text-ltrGray">
