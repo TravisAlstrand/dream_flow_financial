@@ -16,7 +16,7 @@ export default withMT({
         },
       },
       backgroundImage: {
-        "hero-bg": "url('trees.jpg')",
+        "hero-bg": "url('/images/river-ripple-realistic.png')",
       },
     },
     colors: {

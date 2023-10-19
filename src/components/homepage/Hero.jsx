@@ -1,34 +1,18 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-export default function Hero() {
+export default function Hero({ height }) {
   const ref = useRef(null);
   const isInView = useInView(ref);
+  const calculatedHeight = window.innerHeight - height;
 
   return (
-    <div id="home" className="bg-white">
-      <div className="max-h-[460px] overflow-hidden">
-        <img
-          src="images/home-img.png"
-          alt="illustration of a peaceful river surrounded by trees with dreamy clouds in the sky"
-          className="mx-auto"
-        />
-      </div>
-      {/* <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-2xl sm:-top-80"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2  bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
-            }}
-          />
-        </div> */}
+    <div id="home" className="bg-gradient-to-b from-pink-50 to-white">
       <div
-        className="mx-auto max-w-2xl pt-10 pb-32 sm:pt-24 wide:pb-24"
+        className="flex justify-center items-center mx-auto w-full px-4 wide:pb-24 z-10 bg-gradient-to-b from-pink-50 to-white"
         ref={ref}
         style={{
+          height: `${calculatedHeight}px`,
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
         }}
@@ -56,17 +40,19 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div
+      {/* PARALLAX IMAGE */}
+      <div className="w-full h-96 bg-fixed bg-hero-bg bg-cover bg-center lg:h-[600px]"></div>
+      {/* <div
         className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-2xl sm:top-[calc(100%-30rem)]"
         aria-hidden="true"
       >
-        {/* <div
-            className="relative left-[calc(50%+17rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
-            }}
-          /> */}
-      </div>
+        <div
+          className="relative left-[calc(50%+17rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          style={{
+            clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+          }}
+        />
+      </div> */}
     </div>
   );
 }

@@ -29,12 +29,12 @@ export default function About() {
             clients to achieve their financial dreams.
           </p>
         </div>
-        <ul role="list" className="mb-6">
+        <ul role="list" className="mb-8">
           {employees.map((person) => (
             <li key={person.name}>
               <div className="mt-10 flex flex-col items-center justify-center gap-x-6">
                 <img
-                  className="h-20 w-20 rounded-full aspect-auto"
+                  className="w-full max-w-md rounded-md shadow-xl aspect-auto mb-4"
                   src={person.imageUrl}
                   alt={person.alt}
                 />

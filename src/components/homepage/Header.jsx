@@ -1,12 +1,25 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { homeNavigation, homeNavigation2 } from "../../json/navigation.json";
 
-export default function Header() {
+export default function Header({ onHeightChange }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [height, setHeight] = useState(0);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (ref.current) {
+      setHeight(ref.current.offsetHeight);
+      onHeightChange(height);
+    }
+  }, [height, onHeightChange]);
+
   return (
-    <header className="sticky top-0 z-50 shadow-xl bg-white font-standard">
+    <header
+      ref={ref}
+      className="sticky top-0 z-50 shadow-xl bg-white font-standard"
+    >
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
