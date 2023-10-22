@@ -29,7 +29,7 @@ export default function AboutPage() {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
         }}
       >
-        <h1 className="text-4xl font-cursive font-bold tracking-tight text-primary sm:text-6xl mb-10">
+        <h1 className="text-4xl font-cursive font-bold tracking-tight text-primary sm:text-6xl mb-16">
           Meet Micheal
         </h1>
         <div className="flex flex-col lg:flex-row">

@@ -77,7 +77,7 @@ export default function Contact() {
         "service_3tvppwq",
         "template_zje0qa8",
         form.current,
-        "6g0rq8vN720O74Ji5"
+        "6g0rq8vN720O74Ji5",
       )
       .then(
         (result) => {
@@ -92,7 +92,7 @@ export default function Contact() {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   }
 
@@ -130,7 +130,7 @@ export default function Contact() {
               labelName={"First Name"}
               type={"text"}
               idName={"firstName"}
-              placeholder={"Jack"}
+              placeholder={"Jane"}
               changeState={(e) => setFirstName(e)}
               isValid={isFirstNameValid}
             />
@@ -140,7 +140,7 @@ export default function Contact() {
               labelName={"Last Name"}
               type={"text"}
               idName={"lastName"}
-              placeholder={"Sparrow"}
+              placeholder={"Doe"}
               changeState={(e) => setLastName(e)}
               isValid={isLastNameValid}
             />
