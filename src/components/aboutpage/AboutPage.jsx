@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-import Header2 from "../Header2";
+import Header1 from "../Header";
 import Contact from "../contactform/Contact";
-import Footer2 from "../Footer2";
+import Footer from "../Footer";
 
 export default function AboutPage() {
   const ref = useRef(null);
@@ -20,7 +20,7 @@ export default function AboutPage() {
   const isInView5 = useInView(ref5);
   return (
     <>
-      <Header2 />
+      <Header1 />
       <main
         className="mx-auto px-6 mt-24 max-w-4xl text-center"
         ref={ref}
@@ -112,7 +112,7 @@ export default function AboutPage() {
         </div>
       </main>
       <Contact />
-      <Footer2 />
+      <Footer />
     </>
   );
 }

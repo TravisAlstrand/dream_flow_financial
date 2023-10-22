@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
-import Header2 from "../Header2";
+import Header1 from "../Header";
 import TestimonialCard from "./TestimonialCard";
-import Footer2 from "../Footer2";
+import Footer from "../Footer";
 import Contact from "../contactform/Contact";
 
 import { fullTestimonials } from "../../json/testimonials.json";
@@ -14,7 +14,7 @@ export default function TestimonialsPage() {
 
   return (
     <>
-      <Header2 />
+      <Header1 />
       <div
         className="mx-auto px-6 mt-24 mb-16 max-w-5xl text-center"
         ref={ref}
@@ -38,7 +38,7 @@ export default function TestimonialsPage() {
         })}
       </div>
       <Contact />
-      <Footer2 />
+      <Footer />
     </>
   );
 }
