@@ -7,9 +7,13 @@ export default function Hero({ height }) {
   const calculatedHeight = window.innerHeight - height;
 
   return (
-    <div id="home" className="bg-gradient-to-b from-pink-50 to-white">
+    // <div id="home" className="bg-gradient-to-b from-pink-50 to-white">
+    <div
+      id="home"
+      className="bg-hero-bg-sml bg-center lg:bg-left bg-cover bg-fixed"
+    >
       <div
-        className="flex justify-center items-center mx-auto w-full px-4 wide:pb-24 z-10 bg-gradient-to-b from-pink-50 to-white"
+        className="flex justify-center items-center mx-auto w-full px-4 wide:pb-24 z-10  bg-black bg-opacity-30"
         ref={ref}
         style={{
           height: `${calculatedHeight}px`,
@@ -18,10 +22,10 @@ export default function Hero({ height }) {
         }}
       >
         <div className="text-center">
-          <h1 className="text-4xl px-8 font-cursive font-bold tracking-tight text-primary sm:text-6xl">
+          <h1 className="text-4xl px-8 font-heading font-bold tracking-tight text-primary sm:text-6xl">
             Your Path to Financial Success Starts Here
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-white">
             Gain peace of mind and achieve your financial goals.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -33,7 +37,7 @@ export default function Hero({ height }) {
             </a>
             <a
               href="#services"
-              className="rounded-md px-3 py-2.5 font-semibold leading-6 text-ltrGray-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-gray-100 transition-colors duration-300"
+              className="rounded-md px-3 py-2.5 font-semibold border-2 border-white leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-gray-100 hover:text-ltrGray-dark transition-colors duration-300"
             >
               Learn more <span aria-hidden="true">→</span>
             </a>
@@ -41,7 +45,7 @@ export default function Hero({ height }) {
         </div>
       </div>
       {/* PARALLAX IMAGE */}
-      <div className="w-full h-96 bg-fixed bg-hero-bg bg-cover bg-center lg:h-[600px]"></div>
+      {/* <div className="w-full h-96 bg-fixed bg-parallax-bg bg-cover bg-center lg:h-[600px]"></div> */}
       {/* <div
         className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-2xl sm:top-[calc(100%-30rem)]"
         aria-hidden="true"

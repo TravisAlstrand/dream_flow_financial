@@ -1,7 +1,7 @@
 export default function ErrorPage() {
   return (
     <div className="mx-auto px-6 mt-24 max-w-2xl text-center lg:max-w-4xl">
-      <h1 className="text-4xl font-cursive font-bold tracking-tight text-primary sm:text-6xl mb-16">
+      <h1 className="text-4xl font-heading font-bold tracking-tight text-primary sm:text-6xl mb-16">
         Uh Oh!
       </h1>
       <p className="mb-10 text-lg leading-8 text-ltrGray">

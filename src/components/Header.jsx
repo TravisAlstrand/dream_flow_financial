@@ -46,11 +46,11 @@ export default function Header1({ onHeightChange }) {
               alt="business logo"
             />
           </a>
-          <span className="hidden text-center font-cursive text-primary text-3xl lg:block">
+          <span className="hidden text-center font-heading text-primary text-3xl lg:block">
             Dream Flow Financial
           </span>
         </div>
-        <span className="font-cursive text-center text-2xl px-8 text-primary sm:text-3xl lg:hidden">
+        <span className="font-heading text-center text-2xl px-8 text-primary sm:text-3xl lg:hidden">
           Dream Flow Financial
         </span>
         <div className="flex lg:hidden">

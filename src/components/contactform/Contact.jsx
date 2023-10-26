@@ -77,7 +77,7 @@ export default function Contact() {
         "service_3tvppwq",
         "template_zje0qa8",
         form.current,
-        "6g0rq8vN720O74Ji5",
+        "6g0rq8vN720O74Ji5"
       )
       .then(
         (result) => {
@@ -92,7 +92,7 @@ export default function Contact() {
         },
         (error) => {
           console.log(error.text);
-        },
+        }
       );
   }
 
@@ -107,7 +107,7 @@ export default function Contact() {
       }}
     >
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-cursive font-bold tracking-tight text-primary sm:text-4xl">
+        <h2 className="text-3xl font-heading font-bold tracking-tight text-primary sm:text-4xl">
           Get in Touch
         </h2>
         <p className="mt-2 text-lg leading-8 text-ltrGray">

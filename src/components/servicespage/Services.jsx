@@ -72,10 +72,10 @@ export default function ServicesPage() {
           }}
           className="pb-16 border-b-2 border-secondary"
         >
-          <h1 className="text-4xl font-cursive font-bold tracking-tight text-primary sm:text-6xl mb-16">
+          <h1 className="text-4xl font-heading font-bold tracking-tight text-primary sm:text-6xl mb-16">
             Services
           </h1>
-          <h2 className="mb-10 font-cursive font-semibold leading-7 text-primary text-2xl">
+          <h2 className="mb-10 font-heading font-semibold leading-7 text-primary text-2xl">
             Welcome to Dream Flow 1 on 1 Financial Coaching Services!
           </h2>
           <p className="mb-10 text-lg leading-8 text-ltrGray">
@@ -99,7 +99,7 @@ export default function ServicesPage() {
           }}
           className="py-16 border-b-2 border-secondary"
         >
-          <h2 className="font-semibold font-cursive leading-7 text-primary text-2xl">
+          <h2 className="font-semibold font-heading leading-7 text-primary text-2xl">
             Here&apos;s what you can expect from our 1 on 1 financial coaching
             services:
           </h2>

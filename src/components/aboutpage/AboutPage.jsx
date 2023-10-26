@@ -29,7 +29,7 @@ export default function AboutPage() {
           transition: "all .4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
         }}
       >
-        <h1 className="text-4xl font-cursive font-bold tracking-tight text-primary sm:text-6xl mb-16">
+        <h1 className="text-4xl font-heading font-bold tracking-tight text-primary sm:text-6xl mb-16">
           Meet Micheal
         </h1>
         <div className="flex flex-col lg:flex-row">
@@ -52,7 +52,7 @@ export default function AboutPage() {
             className="mb-10 text-lg leading-8 text-ltrGray lg:w-1/2 lg:text-left"
           >
             Welcome to{" "}
-            <strong className="font-cursive text-primary">
+            <strong className="font-heading text-primary">
               Dream Flow Financial
             </strong>
             , where financial empowerment meets expertise. Founded by Micheal
@@ -88,7 +88,7 @@ export default function AboutPage() {
             className="mb-10 text-lg leading-8 text-ltrGray lg:w-1/2 lg:text-right"
           >
             At{" "}
-            <strong className="font-cursive text-primary">
+            <strong className="font-heading text-primary">
               Dream Flow Financial
             </strong>
             , we believe that financial success is within reach for everyone.

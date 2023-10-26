@@ -17,7 +17,7 @@ export default function Testimonials() {
         transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
       }}
     >
-      <h2 className="mb-6 font-cursive text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+      <h2 className="mb-6 font-heading text-3xl font-bold tracking-tight text-primary sm:text-4xl">
         What People are Saying...
       </h2>
       <Carousel

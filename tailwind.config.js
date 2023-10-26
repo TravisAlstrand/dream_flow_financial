@@ -16,7 +16,9 @@ export default withMT({
         },
       },
       backgroundImage: {
-        "hero-bg": "url('/images/river-ripple-realistic.png')",
+        "hero-bg-sml": "url('/images/red-coat2.jpg')",
+        "hero-bg-lrg": "url('/images/green-top2.jpg')",
+        "parallax-bg": "url('/images/river-ripple-realistic.png')",
       },
     },
     colors: {
@@ -42,7 +44,7 @@ export default withMT({
       },
     },
     fontFamily: {
-      cursive: ["Satisfy", "cursive"],
+      heading: ["Satisfy", "cursive"],
       standard: ["Montserrat", "sans-serif"],
     },
     plugins: [

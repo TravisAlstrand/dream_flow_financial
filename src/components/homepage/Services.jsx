@@ -69,7 +69,7 @@ export default function Services() {
           <h2 className="font-semibold leading-7 text-secondary text-xl">
             Save Faster
           </h2>
-          <p className="mt-2 font-cursive text-3xl font-bold text-primary sm:text-4xl">
+          <p className="mt-2 font-heading text-3xl font-bold text-primary sm:text-4xl">
             Comprehensive Financial Solutions Tailored to You
           </p>
           <p className="mt-6 text-lg leading-8 text-ltrGray">
