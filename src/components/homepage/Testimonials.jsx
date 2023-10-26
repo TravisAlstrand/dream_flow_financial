@@ -14,7 +14,7 @@ export default function Testimonials() {
       ref={ref}
       style={{
         opacity: isInView ? 1 : 0,
-        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+        transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
       }}
     >
       <h2 className="mb-6 font-cursive text-3xl font-bold tracking-tight text-primary sm:text-4xl">

@@ -14,11 +14,11 @@ export default function Hero({ height }) {
         style={{
           height: `${calculatedHeight}px`,
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
         }}
       >
         <div className="text-center">
-          <h1 className="text-4xl font-cursive font-bold tracking-tight text-primary sm:text-6xl">
+          <h1 className="text-4xl px-8 font-cursive font-bold tracking-tight text-primary sm:text-6xl">
             Your Path to Financial Success Starts Here
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">

@@ -62,7 +62,7 @@ export default function Services() {
         ref={ref}
         style={{
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
         }}
       >
         <div className="mx-auto mb-8 max-w-2xl lg:text-center">

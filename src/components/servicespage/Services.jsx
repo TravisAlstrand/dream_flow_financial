@@ -68,7 +68,7 @@ export default function ServicesPage() {
           ref={ref1}
           style={{
             opacity: isInView1 ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
           }}
           className="pb-16 border-b-2 border-secondary"
         >
@@ -95,7 +95,7 @@ export default function ServicesPage() {
           ref={ref2}
           style={{
             opacity: isInView2 ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
           }}
           className="py-16 border-b-2 border-secondary"
         >
@@ -128,7 +128,7 @@ export default function ServicesPage() {
           ref={ref3}
           style={{
             opacity: isInView3 ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
           }}
           className="pt-16"
         >

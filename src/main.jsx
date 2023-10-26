@@ -10,33 +10,8 @@ import ServicesPage from "./components/servicespage/Services";
 import ScrollToTop from "./components/ScrollToTop";
 import "./index.css";
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <HomePage />,
-//     errorElement: <ErrorPage />,
-//   },
-//   {
-//     path: "/about",
-//     element: <AboutPage />,
-//   },
-//   {
-//     path: "/testimonials",
-//     element: <TestimonialsPage />,
-//   },
-//   {
-//     path: "/services",
-//     element: <ServicesPage />,
-//   },
-//   {
-//     path: "*",
-//     element: <ErrorPage />,
-//   },
-// ]);
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <RouterProvider router={router} /> */}
     <Router>
       <ScrollToTop>
         <Routes>

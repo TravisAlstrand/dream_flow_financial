@@ -26,7 +26,7 @@ export default function AboutPage() {
         ref={ref}
         style={{
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          transition: "all .4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
         }}
       >
         <h1 className="text-4xl font-cursive font-bold tracking-tight text-primary sm:text-6xl mb-16">
@@ -37,7 +37,7 @@ export default function AboutPage() {
             ref={ref1}
             style={{
               opacity: isInView1 ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+              transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
             }}
             className="mb-10 px-6 lg:w-1/2"
             src="images/splash.jpg"
@@ -47,7 +47,7 @@ export default function AboutPage() {
             ref={ref2}
             style={{
               opacity: isInView2 ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+              transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
             }}
             className="mb-10 text-lg leading-8 text-ltrGray lg:w-1/2 lg:text-left"
           >
@@ -65,7 +65,7 @@ export default function AboutPage() {
           ref={ref3}
           style={{
             opacity: isInView3 ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
           }}
           className="mb-10 text-lg leading-8 text-ltrGray"
         >
@@ -83,7 +83,7 @@ export default function AboutPage() {
             ref={ref4}
             style={{
               opacity: isInView4 ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+              transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
             }}
             className="mb-10 text-lg leading-8 text-ltrGray lg:w-1/2 lg:text-right"
           >
@@ -103,7 +103,7 @@ export default function AboutPage() {
             ref={ref5}
             style={{
               opacity: isInView5 ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+              transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
             }}
             className="px-6 lg:w-1/2 lg:max-h-[275px]"
             src="images/red-coat2.jpg"
