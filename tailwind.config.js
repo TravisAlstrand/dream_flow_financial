@@ -44,7 +44,7 @@ export default withMT({
       },
     },
     fontFamily: {
-      heading: ["Satisfy", "cursive"],
+      heading: ["DM Serif Display", "cursive"],
       standard: ["Montserrat", "sans-serif"],
     },
     plugins: [

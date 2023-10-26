@@ -13,7 +13,7 @@ export default function Hero({ height }) {
       className="bg-hero-bg-sml bg-center lg:bg-left bg-cover bg-fixed"
     >
       <div
-        className="flex justify-center items-center mx-auto w-full px-4 wide:pb-24 z-10  bg-black bg-opacity-30"
+        className="flex justify-center items-center mx-auto w-full px-4 wide:pb-24 z-10  bg-black bg-opacity-20"
         ref={ref}
         style={{
           height: `${calculatedHeight}px`,
@@ -22,13 +22,13 @@ export default function Hero({ height }) {
         }}
       >
         <div className="text-center">
-          <h1 className="text-4xl px-8 font-heading font-bold tracking-tight text-primary sm:text-6xl">
+          <h1 className="text-4xl p-8 rounded-t-lg font-heading font-bold tracking-tight text-primary bg-black bg-opacity-60 sm:text-6xl">
             Your Path to Financial Success Starts Here
           </h1>
-          <p className="mt-6 text-lg leading-8 text-white">
+          <p className="p-6 text-lg leading-8 text-white bg-black bg-opacity-60">
             Gain peace of mind and achieve your financial goals.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          <div className="p-10 rounded-b-lg flex items-center justify-center gap-x-6 bg-black bg-opacity-60">
             <a
               href="#contact"
               className="rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm hover:bg-secondary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors duration-300"

@@ -77,7 +77,7 @@ export default function Contact() {
         "service_3tvppwq",
         "template_zje0qa8",
         form.current,
-        "6g0rq8vN720O74Ji5"
+        "6g0rq8vN720O74Ji5",
       )
       .then(
         (result) => {
@@ -92,7 +92,7 @@ export default function Contact() {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   }
 
