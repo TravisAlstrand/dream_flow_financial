@@ -71,7 +71,7 @@ export default function Header1({ onHeightChange }) {
               style={({ isActive }) => {
                 return {
                   borderBottomWidth: isActive ? "2px" : "0px",
-                  borderBottomColor: isActive ? "#38bdf8" : "",
+                  borderBottomColor: isActive ? "#000080" : "",
                 };
               }}
               className="p-1 text-ltrGray focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-gray-100 transition-colors duration-300"
@@ -126,7 +126,7 @@ export default function Header1({ onHeightChange }) {
                     style={({ isActive }) => {
                       return {
                         borderBottomWidth: isActive ? "2px" : "0px",
-                        borderBottomColor: isActive ? "#38bdf8" : "",
+                        borderBottomColor: isActive ? "#000080" : "",
                       };
                     }}
                     className="-mx-3 block px-3 py-2 text-base leading-7 text-ltrGray hover:bg-gray-50 font-standard focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"

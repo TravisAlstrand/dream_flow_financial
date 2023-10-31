@@ -17,25 +17,24 @@ export default withMT({
       },
       backgroundImage: {
         "hero-bg-sml": "url('/images/red-coat2.jpg')",
-        "hero-bg-lrg": "url('/images/green-top2.jpg')",
         "parallax-bg": "url('/images/river-ripple-realistic.png')",
       },
     },
     colors: {
       primary: {
-        DEFAULT: "#38bdf8",
-        light: "#7dd3fc",
-        dark: "#0369a1",
+        DEFAULT: "#000080",
+        light: "#0202c9",
+        dark: "#000030",
       },
       secondary: {
-        DEFAULT: "#4ade80",
-        light: "#86efac",
-        dark: "#15803d",
+        DEFAULT: "#D9A802",
+        light: "#ffc500",
+        dark: "#a17c02",
       },
       ltrGray: {
-        DEFAULT: "#4b5563",
-        light: "#6b7280",
-        dark: "#111827",
+        DEFAULT: "#111827",
+        light: "#1d2840",
+        dark: "#010203",
       },
       error: {
         DEFAULT: "#ef4444",

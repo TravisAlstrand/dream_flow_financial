@@ -77,7 +77,7 @@ export default function Contact() {
         "service_3tvppwq",
         "template_zje0qa8",
         form.current,
-        "6g0rq8vN720O74Ji5",
+        "6g0rq8vN720O74Ji5"
       )
       .then(
         (result) => {
@@ -92,14 +92,14 @@ export default function Contact() {
         },
         (error) => {
           console.log(error.text);
-        },
+        }
       );
   }
 
   return (
     <section
       id="contact"
-      className="relative flex flex-col items-center isolate bg-white px-6 pt-24 pb-32 sm:py-32 lg:px-8 wide:py-12"
+      className="relative flex flex-col items-center isolate font-standard bg-white px-6 pt-24 pb-32 sm:py-32 lg:px-8 wide:py-12"
       ref={ref}
       style={{
         opacity: isInView ? 1 : 0,

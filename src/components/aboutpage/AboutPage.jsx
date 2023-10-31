@@ -22,7 +22,7 @@ export default function AboutPage() {
     <>
       <Header1 />
       <main
-        className="mx-auto px-6 mt-24 max-w-4xl text-center"
+        className="mx-auto px-6 mt-24 max-w-4xl text-center font-standard"
         ref={ref}
         style={{
           opacity: isInView ? 1 : 0,
@@ -106,8 +106,8 @@ export default function AboutPage() {
               transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
             }}
             className="px-6 lg:w-1/2 lg:max-h-[275px]"
-            src="images/red-coat2.jpg"
-            alt="photo of Micheal raising hands freely"
+            src="images/green-top1.jpg"
+            alt="photo of Micheal sitting on a rock at the river"
           />
         </div>
       </main>
