@@ -24,7 +24,7 @@ export default function Testimonials() {
         autoplay={true}
         loop={true}
         autoplayDelay={15000}
-        className="rounded-xl max-w-5xl h-full overflow-y-hidden mb-8"
+        className="rounded-xl max-w-5xl h-full max-h-[800px] overflow-y-hidden mb-8"
       >
         {reviews.map((review) => {
           return (
@@ -33,8 +33,8 @@ export default function Testimonials() {
               className="relative h-full w-full"
             >
               <img
-                src="trees.jpg"
-                alt="background image of trees"
+                src="/images/river-ripple.jpg"
+                alt="serene river with a ripple in the water"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/60">
