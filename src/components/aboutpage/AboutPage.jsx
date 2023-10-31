@@ -40,7 +40,7 @@ export default function AboutPage() {
               transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
             }}
             className="mb-10 px-6 lg:w-1/2"
-            src="images/splash.jpg"
+            src="images/splash-sml.jpg"
             alt="Micheal in a river splashing the water"
           />
           <p
