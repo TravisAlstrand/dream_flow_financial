@@ -55,10 +55,10 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-white py-24 sm:py-32 text-center wide:py-12"
+      className="mx-auto max-w-7xl bg-white py-24 sm:py-32 text-center wide:py-12"
     >
       <div
-        className="mx-auto max-w-7xl px-6 lg:px-8"
+        className="px-6 lg:px-8"
         ref={ref}
         style={{
           opacity: isInView ? 1 : 0,

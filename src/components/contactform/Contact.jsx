@@ -99,7 +99,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative flex flex-col items-center isolate font-standard bg-white px-6 pt-24 pb-32 sm:py-32 lg:px-8 wide:py-12"
+      className="relative flex flex-col mx-auto max-w-7xl items-center isolate font-standard bg-white px-6 pt-24 pb-32 sm:py-32 lg:px-8 wide:py-12"
       ref={ref}
       style={{
         opacity: isInView ? 1 : 0,

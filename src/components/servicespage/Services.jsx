@@ -63,7 +63,7 @@ export default function ServicesPage() {
   return (
     <>
       <Header />
-      <main className="mx-auto px-6 mt-24 max-w-2xl font-standard text-center lg:max-w-4xl">
+      <main className="mx-auto px-6 mt-24 max-w-2xl font-standard text-center lg:max-w-4xl 2xl:max-w-7xl">
         <section
           ref={ref1}
           style={{

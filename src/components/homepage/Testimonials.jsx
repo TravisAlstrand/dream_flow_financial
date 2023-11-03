@@ -10,14 +10,14 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="flex flex-col items-center relative isolate overflow-hidden h-screen bg-white px-6 py-24 sm:py-32 lg:px-8 wide:h-fit wide:py-12"
+      className="flex flex-col mx-auto max-w-7xl items-center relative isolate overflow-hidden h-screen bg-white px-6 py-24 sm:py-32 lg:px-8 wide:h-fit wide:py-12"
       ref={ref}
       style={{
         opacity: isInView ? 1 : 0,
         transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
       }}
     >
-      <h2 className="mb-6 font-heading text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+      <h2 className="mb-6 font-heading text-center text-3xl font-bold tracking-tight text-primary sm:text-4xl">
         What People are Saying...
       </h2>
       <Carousel

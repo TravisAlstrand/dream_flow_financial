@@ -10,7 +10,7 @@ export default function Hero({ height }) {
     // <div id="home" className="bg-gradient-to-b from-pink-50 to-white">
     <div
       id="home"
-      className="bg-hero-bg-sml bg-center lg:bg-left bg-cover bg-fixed"
+      className="max-w-7xl bg-hero-bg-sml mx-auto bg-center lg:bg-left bg-cover bg-fixed"
     >
       <div
         className="flex justify-center items-center mx-auto w-full px-4 wide:pb-24 z-10 bg-white bg-opacity-10"

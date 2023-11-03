@@ -10,7 +10,7 @@ export default function TestimonialCard({ name, src, quotes }) {
 
   return (
     <section
-      className="mt-24 pt-8 pb-4 sm:pb-12 px-4 bg-gradient-to-r from-white to-secondary-light rounded-md odd:bg-gradient-to-l lg:flex lg:flex-row-reverse lg:odd:flex-row"
+      className="mt-24 pt-8 pb-4 sm:pb-12 px-4 bg-gradient-to-l from-white to-secondary-light rounded-md odd:bg-gradient-to-r lg:flex lg:flex-row-reverse lg:odd:flex-row"
       ref={ref}
       style={{
         opacity: isInView ? 1 : 0,

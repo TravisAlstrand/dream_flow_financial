@@ -16,7 +16,7 @@ export default function TestimonialsPage() {
     <>
       <Header1 />
       <div
-        className="mx-auto px-6 mt-24 mb-16 font-standard max-w-5xl text-center"
+        className="mx-auto px-6 mt-24 mb-16 font-standard max-w-7xl text-center"
         ref={ref}
         style={{
           opacity: isInView ? 1 : 0,

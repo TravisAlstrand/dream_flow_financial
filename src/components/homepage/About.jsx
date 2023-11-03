@@ -9,10 +9,10 @@ export default function About() {
   return (
     <section
       id="about"
-      className="bg-white py-24 sm:py-32 flex items-center justify-center text-center wide:py-12"
+      className="bg-white mx-auto max-w-7xl py-24 sm:py-32 flex items-center justify-center text-center wide:py-12"
     >
       <div
-        className="mx-auto max-w-7xl px-6 lg:px-8"
+        className="px-6 lg:px-8"
         ref={ref}
         style={{
           opacity: isInView ? 1 : 0,
