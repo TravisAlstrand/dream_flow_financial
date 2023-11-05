@@ -9,3 +9,8 @@
     outline-offset: 2px;
   }
 }
+
+.test-quote:last-of-type {
+  font-weight: bold;
+  color: #000080;
+}

@@ -107,7 +107,7 @@ export default function Contact() {
       }}
     >
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-heading font-bold tracking-tight text-primary sm:text-4xl">
+        <h2 className="text-3xl font-heading font-bold tracking-tight text-primary underline decoration-secondary sm:text-4xl">
           Get in Touch
         </h2>
         <p className="mt-2 text-lg leading-8 text-ltrGray">

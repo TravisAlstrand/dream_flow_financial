@@ -72,7 +72,7 @@ export default function ServicesPage() {
           }}
           className="pb-16 border-b-2 border-secondary"
         >
-          <h1 className="text-4xl font-heading font-bold tracking-tight text-primary sm:text-6xl mb-16">
+          <h1 className="text-4xl font-heading font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl mb-16">
             Services
           </h1>
           <h2 className="mb-10 font-heading font-semibold leading-7 text-primary text-2xl">

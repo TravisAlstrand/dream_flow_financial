@@ -36,13 +36,13 @@ export default function Header1({ onHeightChange }) {
       >
         <div className="flex lg:flex-1 items-center">
           <a
-            href="#"
+            href="/"
             className="rounded-md -m-1.5 p-1.5 lg:mr-8 focus-styles outline-primary"
           >
             <span className="sr-only">Dream Flow Financial</span>
             <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=lightBlue&shade=500"
+              className="h-12 w-12"
+              src="images/logo-250.jpg"
               alt="business logo"
             />
           </a>
@@ -97,13 +97,13 @@ export default function Header1({ onHeightChange }) {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a
-              href="#"
+              href="/"
               className="rounded-md -m-1.5 p-1.5 lg:mr-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <span className="sr-only">Dream Flow Financial</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=lightBlue&shade=500"
+                src="images/logo-250.jpg"
                 alt="business logo"
               />
             </a>
