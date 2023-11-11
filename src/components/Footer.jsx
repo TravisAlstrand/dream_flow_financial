@@ -9,7 +9,7 @@ export default function Footer() {
           <span className="sr-only">Dream Flow Financial</span>
           <img
             className="h-12 w-12"
-            src="images/logo-250.jpg"
+            src="images/DFF-Logo-250.png"
             alt="business logo"
           />
         </a>
