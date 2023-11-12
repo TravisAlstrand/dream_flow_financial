@@ -10,7 +10,7 @@ export default function TestimonialCard({ name, src, quotes }) {
 
   return (
     <section
-      className="mt-24 pt-8 pb-4 sm:pb-12 px-4 lg:flex lg:flex-row-reverse lg:odd:flex-row"
+      className="mt-24 pt-8 pb-4 sm:pb-12 px-4 lg:flex lg:flex-row-reverse lg:odd:flex-row max-h-[450px]"
       ref={ref}
       style={{
         opacity: isInView ? 1 : 0,
@@ -21,7 +21,7 @@ export default function TestimonialCard({ name, src, quotes }) {
         <h2 className="text-4xl font-heading mb-12 pb-4 border-b-2 border-secondary font-bold text-primary">
           {name}
         </h2>
-        <div className="flex flex-col h-full mb-6">
+        <div className="flex flex-col h-[50%] mb-6">
           {quotes.map((quote, index) => {
             return <TestimonialQuote key={index} quote={quote} />;
           })}

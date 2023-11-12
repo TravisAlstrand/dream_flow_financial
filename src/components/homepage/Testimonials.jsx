@@ -42,7 +42,7 @@ export default function Testimonials() {
                   <Typography
                     variant="lead"
                     color="white"
-                    className="mb-12 font-standard font-bold"
+                    className="mb-12 text-md sm:text-xl font-standard"
                   >
                     &quot;{review.review}&quot;
                   </Typography>
@@ -54,7 +54,7 @@ export default function Testimonials() {
                   <Typography
                     variant="h3"
                     color="white"
-                    className="mb-4 text-3xl md:text-4xl lg:text-5xl font-standard"
+                    className="mb-4 text-lg sm:text-3xl md:text-4xl lg:text-5xl font-standard"
                   >
                     {review["reviewer-name"]}
                   </Typography>

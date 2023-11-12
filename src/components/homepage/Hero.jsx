@@ -7,7 +7,6 @@ export default function Hero({ height }) {
   const calculatedHeight = window.innerHeight - height;
 
   return (
-    // <div id="home" className="bg-gradient-to-b from-pink-50 to-white">
     <div
       id="home"
       className="max-w-7xl bg-hero-bg-sml mx-auto bg-center lg:bg-left bg-cover bg-fixed"
@@ -44,19 +43,6 @@ export default function Hero({ height }) {
           </div>
         </div>
       </div>
-      {/* PARALLAX IMAGE */}
-      {/* <div className="w-full h-96 bg-fixed bg-parallax-bg bg-cover bg-center lg:h-[600px]"></div> */}
-      {/* <div
-        className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-2xl sm:top-[calc(100%-30rem)]"
-        aria-hidden="true"
-      >
-        <div
-          className="relative left-[calc(50%+17rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-          style={{
-            clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
-          }}
-        />
-      </div> */}
     </div>
   );
 }
