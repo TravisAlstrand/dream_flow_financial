@@ -5,6 +5,9 @@ import Header1 from "../Header";
 import Contact from "../contactform/Contact";
 import Footer from "../Footer";
 
+import { faqs } from "../../json/faqs.json";
+import { QuestionMarkCircleIcon } from "@heroicons/react/24/outline";
+
 export default function FAQPage() {
   const ref = useRef(null);
 
@@ -21,9 +24,32 @@ export default function FAQPage() {
           transition: "all .4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
         }}
       >
-        <h1 className="text-4xl font-heading font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl mb-16">
+        <h1 className="text-4xl font-heading font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl mb-24">
           Frequently Asked Questions
         </h1>
+        <section className="lg:text-left">
+          {faqs.map((faq, index) => {
+            return (
+              <article
+                key={index}
+                className="relative flex flex-col mb-10 pb-10 border-b-2 border-primary"
+              >
+                <div className="flex items-center lg:gap-x-4">
+                  <div className="left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-secondary">
+                    <QuestionMarkCircleIcon
+                      className="h-6 w-6 text-primary"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h2 className="font-heading text-primary text-2xl w-full">
+                    {faq.question}
+                  </h2>
+                </div>
+                <p className="leading-8 text-ltrGray lg:ml-14">{faq.answer}</p>
+              </article>
+            );
+          })}
+        </section>
       </main>
       <Contact />
       <Footer />
