@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./components/homepage/HomePage";
 import ErrorPage from "./components/errorpage/ErrorPage";
 import AboutPage from "./components/aboutpage/AboutPage";
+import FAQPage from "./components/faqpage/FAQPage";
 import TestimonialsPage from "./components/testimonialspage/TestimonialsPage";
 import ServicesPage from "./components/servicespage/Services";
 import ScrollToTop from "./components/ScrollToTop";
@@ -19,9 +20,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />
+          <Route path="/faq" element={<FAQPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </ScrollToTop>
     </Router>
-  </React.StrictMode>,
+  </React.StrictMode>
 );

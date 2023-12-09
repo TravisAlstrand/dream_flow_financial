@@ -1,0 +1,44 @@
+{
+  "faqs": [
+    {
+      "question": "What services do you offer?",
+      "answer": "We offer a range of financial coaching services tailored to individual needs, including budget planning, debt management, investment advice, retirement planning, and financial goal setting."
+    },
+    {
+      "question": "How does financial coaching differ from financial advising?",
+      "answer": "Financial coaching focuses on educating and empowering clients to make informed financial decisions and develop healthy financial habits. It's more about guidance and support, while financial advising often involves managing investments and creating detailed financial plans."
+    },
+    {
+      "question": "Who can benefit from financial coaching?",
+      "answer": "Anyone looking to improve their financial situation can benefit from financial coaching. This includes individuals struggling with debt, those looking to save for a specific goal, or anyone who wants to learn more about managing their finances effectively."
+    },
+    {
+      "question": "How long does a typical coaching session last?",
+      "answer": "A typical session lasts about 60 minutes. However, the duration can vary based on the client's needs and the complexity of their financial situation."
+    },
+    {
+      "question": "Is financial coaching suitable for people with a limited income?",
+      "answer": "Yes, absolutely. Financial coaching can be particularly beneficial for those with limited income as it helps in creating a realistic budget, identifying areas for savings, and making the most of their financial resources."
+    },
+    {
+      "question": "How is the success of financial coaching measured?",
+      "answer": "Success is measured by the client’s progress towards their financial goals, their increased financial literacy, and improvements in financial habits and behaviors."
+    },
+    {
+      "question": "Can financial coaching help with debt reduction?",
+      "answer": "Yes, one of the key areas of financial coaching is helping clients develop strategies to reduce and manage debt effectively."
+    },
+    {
+      "question": "Are there any online resources available in addition to one-on-one coaching?",
+      "answer": "Yes, we offer various online resources including webinars, blog articles, and interactive tools to complement our one-on-one coaching sessions."
+    },
+    {
+      "question": "What is the cost of financial coaching?",
+      "answer": "Our pricing varies depending on the services and the level of coaching required. We offer a free initial consultation to discuss your needs and provide a detailed quote."
+    },
+    {
+      "question": "How do I get started with financial coaching?",
+      "answer": "Getting started is easy. Simply contact us to schedule a free initial consultation, where we'll discuss your financial goals and how we can help you achieve them."
+    }
+  ]
+}
