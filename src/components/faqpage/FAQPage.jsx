@@ -32,9 +32,9 @@ export default function FAQPage() {
             return (
               <article
                 key={index}
-                className="relative flex flex-col mb-10 pb-10 border-b-2 border-primary"
+                className="relative flex flex-col mb-10 last:mb-0  pb-10 border-b-2 border-primary"
               >
-                <div className="flex items-center lg:gap-x-4">
+                <div className="flex flex-col mb-4 gap-y-4 items-center lg:flex-row lg:gap-x-4 lg:gap-y-0">
                   <div className="left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-secondary">
                     <QuestionMarkCircleIcon
                       className="h-6 w-6 text-primary"
