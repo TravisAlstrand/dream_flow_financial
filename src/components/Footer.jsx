@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="flex flex-col items-center justify-center p-6 lg:px-8">
         <a
           href="/"
-          className="rounded-md focus-styles focus-visible:outline-primary"
+          className="focus-styles rounded-md focus-visible:outline-primary"
         >
           <span className="sr-only">Dream Flow Financial</span>
           <img

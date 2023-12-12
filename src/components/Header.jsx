@@ -28,17 +28,17 @@ export default function Header1({ onHeightChange }) {
 
   return (
     <header
-      className="sticky top-0 z-50 shadow-xl bg-white font-standard"
+      className="sticky top-0 z-50 bg-white font-standard shadow-xl"
       ref={ref}
     >
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1 items-center">
+        <div className="flex items-center lg:flex-1">
           <a
             href="/"
-            className="rounded-md -m-1.5 p-1.5 lg:mr-8 focus-styles outline-primary"
+            className="focus-styles -m-1.5 rounded-md p-1.5 outline-primary lg:mr-8"
           >
             <span className="sr-only">Dream Flow Financial</span>
             <img
@@ -47,11 +47,11 @@ export default function Header1({ onHeightChange }) {
               alt="business logo"
             />
           </a>
-          <span className="hidden text-center font-heading text-primary text-3xl lg:block">
+          <span className="hidden text-center font-heading text-3xl text-primary lg:block">
             Dream Flow Financial
           </span>
         </div>
-        <span className="font-heading text-center text-2xl px-8 text-primary sm:text-3xl lg:hidden">
+        <span className="px-8 text-center font-heading text-2xl text-primary sm:text-3xl lg:hidden">
           Dream Flow Financial
         </span>
         <div className="flex lg:hidden">
@@ -75,14 +75,14 @@ export default function Header1({ onHeightChange }) {
                   borderBottomColor: isActive ? "#000080" : "",
                 };
               }}
-              className="p-1 text-ltrGray focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-gray-100 transition-colors duration-300"
+              className="p-1 text-ltrGray transition-colors duration-300 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               {item.name}
             </NavLink>
           ))}
           <NavHashLink
             to="#contact"
-            className="p-1 text-ltrGray focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-gray-100 transition-colors duration-300"
+            className="p-1 text-ltrGray transition-colors duration-300 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             Contact
           </NavHashLink>
@@ -99,7 +99,7 @@ export default function Header1({ onHeightChange }) {
           <div className="flex items-center justify-between">
             <a
               href="/"
-              className="rounded-md -m-1.5 p-1.5 lg:mr-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="-m-1.5 rounded-md p-1.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary lg:mr-8"
             >
               <span className="sr-only">Dream Flow Financial</span>
               <img
@@ -130,7 +130,7 @@ export default function Header1({ onHeightChange }) {
                         borderBottomColor: isActive ? "#000080" : "",
                       };
                     }}
-                    className="-mx-3 block px-3 py-2 text-base leading-7 text-ltrGray hover:bg-gray-50 font-standard focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    className="-mx-3 block px-3 py-2 font-standard text-base leading-7 text-ltrGray hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
@@ -138,7 +138,7 @@ export default function Header1({ onHeightChange }) {
                 ))}
                 <NavHashLink
                   to="#contact"
-                  className="-mx-3 block px-3 py-2 text-base leading-7 text-ltrGray hover:bg-gray-50 font-standard focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  className="-mx-3 block px-3 py-2 font-standard text-base leading-7 text-ltrGray hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Contact

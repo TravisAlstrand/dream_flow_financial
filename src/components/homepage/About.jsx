@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="bg-white mx-auto max-w-7xl py-24 sm:py-32 flex items-center justify-center text-center wide:py-12"
+      className="mx-auto flex max-w-7xl items-center justify-center bg-white py-24 text-center sm:py-32 wide:py-12"
     >
       <div
         className="px-6 lg:px-8"
@@ -20,7 +20,7 @@ export default function About() {
         }}
       >
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-heading font-bold tracking-tight text-primary sm:text-4xl">
+          <h2 className="font-heading text-3xl font-bold tracking-tight text-primary sm:text-4xl">
             Meet Micheal
           </h2>
           <p className="mt-6 text-lg leading-8 text-ltrGray">
@@ -34,7 +34,7 @@ export default function About() {
             <li key={person.name}>
               <div className="mt-10 flex flex-col items-center justify-center gap-x-6">
                 <img
-                  className="w-full max-w-md rounded-md shadow-xl aspect-auto mb-4"
+                  className="mb-4 aspect-auto w-full max-w-md rounded-md shadow-xl"
                   src={person.imageUrl}
                   alt={person.alt}
                 />
@@ -52,7 +52,7 @@ export default function About() {
         </ul>
         <a
           href="/about"
-          className="rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm hover:bg-secondary-light focus-styles focus-visible:outline-primary transition-colors duration-300"
+          className="focus-styles rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm transition-colors duration-300 hover:bg-secondary-light focus-visible:outline-primary"
         >
           Learn More About Micheal
         </a>

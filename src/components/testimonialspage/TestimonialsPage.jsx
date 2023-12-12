@@ -16,14 +16,14 @@ export default function TestimonialsPage() {
     <>
       <Header1 />
       <div
-        className="mx-auto px-6 mt-24 mb-16 font-standard max-w-7xl text-center"
+        className="mx-auto mb-16 mt-24 max-w-7xl px-6 text-center font-standard"
         ref={ref}
         style={{
           opacity: isInView ? 1 : 0,
           transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
         }}
       >
-        <h1 className="text-4xl font-heading font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl mb-16">
+        <h1 className="mb-16 font-heading text-4xl font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl">
           Testimonials
         </h1>
         {fullTestimonials.map((testimonial, index) => {

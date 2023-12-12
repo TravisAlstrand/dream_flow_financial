@@ -25,5 +25,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         </Routes>
       </ScrollToTop>
     </Router>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

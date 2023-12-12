@@ -22,14 +22,14 @@ export default function AboutPage() {
     <>
       <Header1 />
       <main
-        className="mx-auto px-6 mt-24 max-w-4xl text-center font-standard"
+        className="mx-auto mt-24 max-w-4xl px-6 text-center font-standard"
         ref={ref}
         style={{
           opacity: isInView ? 1 : 0,
           transition: "all .4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
         }}
       >
-        <h1 className="text-4xl font-heading font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl mb-16">
+        <h1 className="mb-16 font-heading text-4xl font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl">
           Meet Micheal
         </h1>
         <div className="flex flex-col lg:flex-row">
@@ -105,7 +105,7 @@ export default function AboutPage() {
               opacity: isInView5 ? 1 : 0,
               transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
             }}
-            className="px-6 lg:w-1/2 lg:max-h-[275px]"
+            className="px-6 lg:max-h-[275px] lg:w-1/2"
             src="images/green-top1.jpg"
             alt="photo of Micheal sitting on a rock at the river"
           />

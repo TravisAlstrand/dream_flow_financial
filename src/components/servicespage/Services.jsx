@@ -63,19 +63,19 @@ export default function ServicesPage() {
   return (
     <>
       <Header />
-      <main className="mx-auto px-6 mt-24 max-w-2xl font-standard text-center lg:max-w-4xl 2xl:max-w-7xl">
+      <main className="mx-auto mt-24 max-w-2xl px-6 text-center font-standard lg:max-w-4xl 2xl:max-w-7xl">
         <section
           ref={ref1}
           style={{
             opacity: isInView1 ? 1 : 0,
             transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
           }}
-          className="pb-16 border-b-2 border-secondary"
+          className="border-b-2 border-secondary pb-16"
         >
-          <h1 className="text-4xl font-heading font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl mb-16">
+          <h1 className="mb-16 font-heading text-4xl font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl">
             Services
           </h1>
-          <h2 className="mb-10 font-heading font-semibold leading-7 text-primary text-2xl">
+          <h2 className="mb-10 font-heading text-2xl font-semibold leading-7 text-primary">
             Welcome to Dream Flow 1 on 1 Financial Coaching Services!
           </h2>
           <p className="mb-10 text-lg leading-8 text-ltrGray">
@@ -97,13 +97,13 @@ export default function ServicesPage() {
             opacity: isInView2 ? 1 : 0,
             transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
           }}
-          className="py-16 border-b-2 border-secondary"
+          className="border-b-2 border-secondary py-16"
         >
-          <h2 className="font-semibold font-heading leading-7 text-primary text-2xl">
+          <h2 className="font-heading text-2xl font-semibold leading-7 text-primary">
             Here&apos;s what you can expect from our 1 on 1 financial coaching
             services:
           </h2>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl text-left">
+          <div className="mx-auto mt-16 max-w-2xl text-left sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
               {services.map((service) => (
                 <div key={service.name} className="relative pl-16">

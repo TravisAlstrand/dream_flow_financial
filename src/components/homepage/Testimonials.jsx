@@ -10,21 +10,21 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="flex flex-col mx-auto max-w-7xl items-center relative isolate overflow-hidden h-screen bg-white py-24 sm:py-32 sm:px-6 lg:px-8 wide:h-fit wide:py-12"
+      className="relative isolate mx-auto flex h-screen max-w-7xl flex-col items-center overflow-hidden bg-white py-24 sm:px-6 sm:py-32 lg:px-8 wide:h-fit wide:py-12"
       ref={ref}
       style={{
         opacity: isInView ? 1 : 0,
         transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
       }}
     >
-      <h2 className="mb-6 px-6 sm:px-0 font-heading text-center text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+      <h2 className="mb-6 px-6 text-center font-heading text-3xl font-bold tracking-tight text-primary sm:px-0 sm:text-4xl">
         What People are Saying...
       </h2>
       <Carousel
         autoplay={true}
         loop={true}
         autoplayDelay={15000}
-        className="rounded-xl max-w-5xl h-full max-h-[800px] overflow-y-hidden mb-8"
+        className="mb-8 h-full max-h-[800px] max-w-5xl overflow-y-hidden rounded-xl"
       >
         {reviews.map((review) => {
           return (
@@ -42,7 +42,7 @@ export default function Testimonials() {
                   <Typography
                     variant="lead"
                     color="white"
-                    className="mb-12 text-md sm:text-xl font-standard"
+                    className="text-md mb-12 font-standard sm:text-xl"
                   >
                     &quot;{review.review}&quot;
                   </Typography>
@@ -54,7 +54,7 @@ export default function Testimonials() {
                   <Typography
                     variant="h3"
                     color="white"
-                    className="mb-4 text-lg sm:text-3xl md:text-4xl lg:text-5xl font-standard"
+                    className="mb-4 font-standard text-lg sm:text-3xl md:text-4xl lg:text-5xl"
                   >
                     {review["reviewer-name"]}
                   </Typography>
@@ -73,7 +73,7 @@ export default function Testimonials() {
       </Carousel>
       <a
         href="/testimonials"
-        className="rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm hover:bg-secondary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors duration-300"
+        className="rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm transition-colors duration-300 hover:bg-secondary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       >
         See More Reviews <span aria-hidden="true">→</span>
       </a>

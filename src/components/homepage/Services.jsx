@@ -55,7 +55,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="mx-auto max-w-7xl bg-white py-24 sm:py-32 text-center wide:py-12"
+      className="mx-auto max-w-7xl bg-white py-24 text-center sm:py-32 wide:py-12"
     >
       <div
         className="px-6 lg:px-8"
@@ -66,7 +66,7 @@ export default function Services() {
         }}
       >
         <div className="mx-auto mb-8 max-w-2xl lg:text-center">
-          <h2 className="font-semibold leading-7 text-secondary text-xl">
+          <h2 className="text-xl font-semibold leading-7 text-secondary">
             Save Faster
           </h2>
           <p className="mt-2 font-heading text-3xl font-bold text-primary sm:text-4xl">
@@ -82,7 +82,7 @@ export default function Services() {
         </div>
         <a
           href="/services"
-          className="rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm hover:bg-secondary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors duration-300"
+          className="rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm transition-colors duration-300 hover:bg-secondary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           See All Services <span aria-hidden="true">→</span>
         </a>

@@ -77,7 +77,7 @@ export default function Contact() {
         "service_3tvppwq",
         "template_zje0qa8",
         form.current,
-        "6g0rq8vN720O74Ji5"
+        "6g0rq8vN720O74Ji5",
       )
       .then(
         (result) => {
@@ -92,14 +92,14 @@ export default function Contact() {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   }
 
   return (
     <section
       id="contact"
-      className="relative flex flex-col mx-auto max-w-7xl items-center isolate font-standard bg-white px-6 pt-24 pb-32 sm:py-32 lg:px-8 wide:py-12"
+      className="relative isolate mx-auto flex max-w-7xl flex-col items-center bg-white px-6 pb-32 pt-24 font-standard sm:py-32 lg:px-8 wide:py-12"
       ref={ref}
       style={{
         opacity: isInView ? 1 : 0,
@@ -107,7 +107,7 @@ export default function Contact() {
       }}
     >
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-heading font-bold tracking-tight text-primary underline decoration-secondary sm:text-4xl">
+        <h2 className="font-heading text-3xl font-bold tracking-tight text-primary underline decoration-secondary sm:text-4xl">
           Get in Touch
         </h2>
         <p className="mt-2 text-lg leading-8 text-ltrGray">
@@ -117,7 +117,7 @@ export default function Contact() {
         </p>
       </div>
       <form
-        className="w-full mx-auto mt-16 max-w-xl sm:mt-20"
+        className="mx-auto mt-16 w-full max-w-xl sm:mt-20"
         onSubmit={handleSubmit}
         ref={form}
       >
@@ -178,7 +178,7 @@ export default function Contact() {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-secondary px-3.5 py-2.5 text-center font-semibold text-ltrGray-dark shadow-sm hover:bg-secondary-light focus-styles focus-visible:outline-primary transition-colors duration-300"
+            className="focus-styles block w-full rounded-md bg-secondary px-3.5 py-2.5 text-center font-semibold text-ltrGray-dark shadow-sm transition-colors duration-300 hover:bg-secondary-light focus-visible:outline-primary"
           >
             Let&apos;s talk
           </button>

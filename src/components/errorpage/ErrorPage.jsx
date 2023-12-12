@@ -1,7 +1,7 @@
 export default function ErrorPage() {
   return (
-    <div className="mx-auto px-6 mt-24 max-w-2xl text-center lg:max-w-4xl">
-      <h1 className="text-4xl font-heading font-bold tracking-tight text-primary sm:text-6xl mb-16">
+    <div className="mx-auto mt-24 max-w-2xl px-6 text-center lg:max-w-4xl">
+      <h1 className="mb-16 font-heading text-4xl font-bold tracking-tight text-primary sm:text-6xl">
         Uh Oh!
       </h1>
       <p className="mb-10 text-lg leading-8 text-ltrGray">
@@ -9,7 +9,7 @@ export default function ErrorPage() {
       </p>
       <a
         href="/"
-        className="rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm hover:bg-secondary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors duration-300"
+        className="rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm transition-colors duration-300 hover:bg-secondary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       >
         Back to Home <span aria-hidden="true">→</span>
       </a>
