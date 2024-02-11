@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import { PopupWidget } from "react-calendly";
 
 export default function Hero({ height }) {
   const ref = useRef(null);
@@ -28,12 +29,24 @@ export default function Hero({ height }) {
             Gain peace of mind and achieve your financial goals.
           </p>
           <div className="flex items-center justify-center gap-x-6 rounded-b-lg p-10">
-            <a
+            <PopupWidget
+              url="https://calendly.com/dreamflowfinancial/financial-coaching-session"
+              /*
+               * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+               * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+               */
+              rootElement={document.getElementById("root")}
+              text="Click here to schedule!"
+              textColor="#ffffff"
+              color="#D9A802"
+              styles={"left: 0;"}
+            />
+            {/* <a
               href="#contact"
               className="rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm transition-colors duration-300 hover:bg-secondary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               Get started
-            </a>
+            </a> */}
             <a
               href="#services"
               className="rounded-md border-2 border-primary px-3 py-2.5 font-semibold leading-6 text-primary transition-colors duration-300 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"

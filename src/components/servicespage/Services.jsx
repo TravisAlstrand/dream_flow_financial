@@ -17,7 +17,7 @@ const services = [
   {
     name: "Personalized Financial Assessment",
     description:
-      "After the first free session, Micheal works on an action plan to help align your money with goals. There are homework assignments to help you look at your money to figure out where you are now. Then we look at budgeting, putting a budget together that is right for you and feels easy and abundant. Whether you want to pay off debt, save for a down payment on a house, or plan for retirement, Micheal will help you create a step-by-step action plan to reach your goals.",
+      "Micheal will start with a free financial coaching session, discussing your goals, dreams, current financial situation, and financial knowledge and experience. This includes discussing your income, expenses, debts, assets, and financial goals. By understanding your unique circumstances, we can tailor our coaching to meet your specific needs.",
     icon: UsersIcon,
   },
   {
