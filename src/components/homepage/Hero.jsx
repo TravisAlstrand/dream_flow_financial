@@ -31,10 +31,6 @@ export default function Hero({ height }) {
           <div className="flex items-center justify-center gap-x-6 rounded-b-lg p-10">
             <PopupWidget
               url="https://calendly.com/dreamflowfinancial/financial-coaching-session"
-              /*
-               * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-               * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-               */
               rootElement={document.getElementById("root")}
               text="Click here to schedule!"
               textColor="#ffffff"

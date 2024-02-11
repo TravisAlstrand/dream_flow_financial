@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import { PopupWidget } from "react-calendly";
 import {
   BanknotesIcon,
   ChartBarIcon,
@@ -84,12 +85,22 @@ export default function ServicesPage() {
             1 on 1 financial coaching services to support you so you can achieve
             your financial goals and gain control over your finances.
           </p>
-          <p className="text-lg leading-8 text-ltrGray">
+          <p className="mb-10 text-lg leading-8 text-ltrGray">
             Micheal is here to guide you through every step of your financial
             journey. Whether you&apos;re struggling with debt, want to save for
             a specific goal, or need help creating a budget, Micheal will
             provide you with the knowledge, tools, and support to thrive.
           </p>
+          <div className="flex justify-center">
+            <PopupWidget
+              url="https://calendly.com/dreamflowfinancial/financial-coaching-session"
+              rootElement={document.getElementById("root")}
+              text="Click here to schedule!"
+              textColor="#ffffff"
+              color="#D9A802"
+              styles={"left: 0;"}
+            />
+          </div>
         </section>
         <section
           ref={ref2}
@@ -144,6 +155,16 @@ export default function ServicesPage() {
             today with the form below. Let&apos;s work together to transform
             your financial life and flow into the life of your dreams!
           </p>
+          <div className="flex justify-center">
+            <PopupWidget
+              url="https://calendly.com/dreamflowfinancial/financial-coaching-session"
+              rootElement={document.getElementById("root")}
+              text="Click here to schedule!"
+              textColor="#ffffff"
+              color="#D9A802"
+              styles={"left: 0;"}
+            />
+          </div>
         </section>
         <Contact />
       </main>
