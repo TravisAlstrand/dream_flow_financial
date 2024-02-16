@@ -2,11 +2,15 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 
 import Header1 from "../Header";
-import TestimonialCard from "./TestimonialCard";
+import VideoTestimonialCard from "./VideoTestimonialCard";
 import Footer from "../Footer";
 import Contact from "../contactform/Contact";
 
-import { fullTestimonials } from "../../json/testimonials.json";
+import {
+  videoTestimonials,
+  noVideoTestimonials,
+} from "../../json/testimonials.json";
+import NoVideoTestimonialCard from "./NoVideoTestimonialCard";
 
 export default function TestimonialsPage() {
   const ref = useRef(null);
@@ -26,12 +30,22 @@ export default function TestimonialsPage() {
         <h1 className="mb-16 font-heading text-4xl font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl">
           Testimonials
         </h1>
-        {fullTestimonials.map((testimonial, index) => {
+        {videoTestimonials.map((testimonial, index) => {
           return (
-            <TestimonialCard
+            <VideoTestimonialCard
               name={testimonial.name}
               src={testimonial.src}
               quotes={testimonial.quotes}
+              fullQuote={testimonial.fullQuote}
+              key={index}
+            />
+          );
+        })}
+        {noVideoTestimonials.map((testimonial, index) => {
+          return (
+            <NoVideoTestimonialCard
+              name={testimonial.name}
+              fullQuote={testimonial.fullQuote}
               key={index}
             />
           );

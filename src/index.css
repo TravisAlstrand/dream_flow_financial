@@ -21,8 +21,30 @@
 
 .calendly-badge-widget .calendly-badge-content {
   font-family: "Montserrat", sans-serif !important;
-  font-size: 1rem !important;
   padding: 0.625rem 0.75rem !important;
+  font-size: 1rem !important;
   line-height: 1.5rem !important;
+  color: #010203 !important;
   border-radius: 6px !important;
+  transition: background 0.3s ease;
+}
+
+.calendly-badge-content:hover {
+  background: #ffc500 !important;
+}
+
+a .social-svg > path {
+  transition: fill 0.3s ease;
+}
+
+a .social-svg {
+  transition: transform 0.3s ease;
+}
+
+a:hover .social-svg > path {
+  fill: #ffc500;
+}
+
+a:hover .social-svg {
+  transform: scale(1.2);
 }

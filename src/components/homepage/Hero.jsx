@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import { PopupWidget } from "react-calendly";
+
+import CalendlyLink from "../CalendlyLink";
 
 export default function Hero({ height }) {
   const ref = useRef(null);
@@ -29,14 +30,7 @@ export default function Hero({ height }) {
             Gain peace of mind and achieve your financial goals.
           </p>
           <div className="flex items-center justify-center gap-x-6 rounded-b-lg p-10">
-            <PopupWidget
-              url="https://calendly.com/dreamflowfinancial/financial-coaching-session"
-              rootElement={document.getElementById("root")}
-              text="Click here to schedule!"
-              textColor="#ffffff"
-              color="#D9A802"
-              styles={"left: 0;"}
-            />
+            <CalendlyLink />
             {/* <a
               href="#contact"
               className="rounded-md bg-secondary px-3.5 py-2.5 font-semibold text-ltrGray-dark shadow-sm transition-colors duration-300 hover:bg-secondary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"

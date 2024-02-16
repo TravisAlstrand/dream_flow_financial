@@ -1,27 +1,23 @@
 {
   "carouselTestimonials": [
     {
-      "reviewer-name": "Rachel",
+      "reviewer-name": "Rachel Devitt",
       "review": "I was drowning financially, living paycheck to paycheck. It was very obvious that her goal was to help pull me out of the pit I dug myself into. Working with Micheal has been absolutely life changing!"
+    },
+    {
+      "reviewer-name": "Krista Alstrand",
+      "review": "I am so grateful I have worked with Micheal so far! She is never judgmental and always so encouraging and excited for any progress I make. I would highly suggest trusting her with your financial darkness!"
     },
     {
       "reviewer-name": "Beth",
       "review": "I was nervous before the session - she put me right at ease. She was genuinely enthusiastic about my life and financial goals. Can't recommend her highly enough!"
     },
     {
-      "reviewer-name": "Travis A.",
+      "reviewer-name": "Travis Alstrand",
       "review": "I lost track of where I was at with my finances. Going through the work with Micheal has turned everything around for me. I definitely recommend it!"
-    },
-    {
-      "reviewer-name": "Michael Brown",
-      "review": "Tax optimization at its best! Micheal saved me money I didn't even know I was losing. Life's better when you keep more of what you earn."
-    },
-    {
-      "reviewer-name": "Lisa Robinson",
-      "review": "I stumbled upon Dream Flow Financial and couldn't be happier. Her financial expertise has made a world of difference. My finances are in great shape, and so is my peace of mind."
     }
   ],
-  "fullTestimonials": [
+  "videoTestimonials": [
     {
       "name": "Beth",
       "src": "https://www.youtube.com/embed/rzCJzZYIkXA?si=HEmJQNwxh0QXNWXF",
@@ -32,13 +28,19 @@
       ]
     },
     {
-      "name": "Rachel",
+      "name": "Rachel Devitt",
       "src": "https://www.youtube.com/embed/YOXdP17Cr6Q?si=wllcel5UNbb9AtJd",
       "quotes": [
         "I was drowning financially, living paycheck to paycheck.",
         "It was very obvious that her goal was to help pull me out of the pit I dug myself into.",
         "Working with Micheal has been absolutely life changing!"
       ]
+    }
+  ],
+  "noVideoTestimonials": [
+    {
+      "name": "Krista Alstrand",
+      "fullQuote": "I am so grateful I have worked with Micheal so far! Finances has always been an area of my life that is a bit out of control and I can tend to ignore. It is stressful looking at it and facing it but I feel very supported by her. She is never judgmental and always so encouraging and excited for any progress I make. She provides thorough notes of our sessions so I can just be present and listen and think about what I want and need financially. I would highly suggest trusting her with your financial darkness and letting her help you see the light!"
     }
   ]
 }

@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import { PopupWidget } from "react-calendly";
 import {
   BanknotesIcon,
   ChartBarIcon,
@@ -11,6 +10,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 import Header from "../Header";
+import CalendlyLink from "../CalendlyLink";
 import Contact from "../contactform/Contact";
 import Footer from "../Footer";
 
@@ -79,6 +79,9 @@ export default function ServicesPage() {
           <h2 className="mb-10 font-heading text-2xl font-semibold leading-7 text-primary">
             Welcome to Dream Flow 1 on 1 Financial Coaching Services!
           </h2>
+          <div className="mb-10 flex justify-center">
+            <CalendlyLink />
+          </div>
           <p className="mb-10 text-lg leading-8 text-ltrGray">
             At Dream Flow Financial Coaching, we understand that everyone&apos;s
             financial situation is unique. That&apos;s why we offer personalized
@@ -91,16 +94,6 @@ export default function ServicesPage() {
             a specific goal, or need help creating a budget, Micheal will
             provide you with the knowledge, tools, and support to thrive.
           </p>
-          <div className="flex justify-center">
-            <PopupWidget
-              url="https://calendly.com/dreamflowfinancial/financial-coaching-session"
-              rootElement={document.getElementById("root")}
-              text="Click here to schedule!"
-              textColor="#ffffff"
-              color="#D9A802"
-              styles={"left: 0;"}
-            />
-          </div>
         </section>
         <section
           ref={ref2}
@@ -156,14 +149,7 @@ export default function ServicesPage() {
             your financial life and flow into the life of your dreams!
           </p>
           <div className="flex justify-center">
-            <PopupWidget
-              url="https://calendly.com/dreamflowfinancial/financial-coaching-session"
-              rootElement={document.getElementById("root")}
-              text="Click here to schedule!"
-              textColor="#ffffff"
-              color="#D9A802"
-              styles={"left: 0;"}
-            />
+            <CalendlyLink />
           </div>
         </section>
         <Contact />

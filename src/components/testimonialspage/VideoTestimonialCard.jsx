@@ -4,7 +4,7 @@ import { useInView } from "framer-motion";
 import TestimonialQuote from "./TestimonialQuote";
 import TestimonialVideo from "./TestimonialVideo";
 
-export default function TestimonialCard({ name, src, quotes }) {
+export default function VideoTestimonialCard({ name, src, quotes }) {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
