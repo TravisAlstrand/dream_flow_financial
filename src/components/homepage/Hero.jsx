@@ -11,7 +11,7 @@ export default function Hero({ height }) {
   return (
     <div
       id="home"
-      className="bg-hero-bg-xs sm:bg-hero-bg-sm md:bg-hero-bg-md mx-auto max-w-7xl bg-cover bg-fixed bg-center lg:bg-left"
+      className="bg-hero-bg-xs sm:bg-hero-bg-sm md:bg-hero-bg-md lg:bg-hero-bg-lg mx-auto max-w-7xl bg-cover bg-fixed bg-center lg:bg-left"
     >
       <div
         className="z-10 mx-auto flex w-full items-center justify-center bg-white bg-opacity-10 px-4 wide:pb-24"

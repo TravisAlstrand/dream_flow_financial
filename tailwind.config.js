@@ -16,9 +16,10 @@ export default withMT({
         },
       },
       backgroundImage: {
-        "hero-bg-xs": "url('/images/hero-xs.jpg')",
-        "hero-bg-sm": "url('/images/hero-sm.jpg')",
-        "hero-bg-md": "url('/images/red-coat2.jpg')",
+        "hero-bg-xs": "url('/images/heroBG-xs.jpg')",
+        "hero-bg-sm": "url('/images/heroBG-sm.jpg')",
+        "hero-bg-md": "url('/images/heroBG-md.jpg')",
+        "hero-bg-lg": "url('/images/heroBG-lg.jpg')",
       },
     },
     colors: {
