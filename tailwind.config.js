@@ -16,8 +16,9 @@ export default withMT({
         },
       },
       backgroundImage: {
-        "hero-bg-sml": "url('/images/red-coat2.jpg')",
-        "parallax-bg": "url('/images/river-ripple-realistic.png')",
+        "hero-bg-xs": "url('/images/hero-xs.jpg')",
+        "hero-bg-sm": "url('/images/hero-sm.jpg')",
+        "hero-bg-md": "url('/images/red-coat2.jpg')",
       },
     },
     colors: {
