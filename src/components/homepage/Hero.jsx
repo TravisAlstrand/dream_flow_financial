@@ -14,7 +14,7 @@ export default function Hero({ height }) {
       className="mx-auto max-w-7xl bg-hero-bg-xs bg-cover bg-center sm:bg-hero-bg-sm md:bg-hero-bg-md lg:bg-hero-bg-lg lg:bg-left"
     >
       <div
-        className="z-10 mx-auto flex w-full items-end justify-center bg-white bg-opacity-10 px-4 pb-40 sm:pb-24 md:pb-32 lg:pb-48 wide:pb-24"
+        className="z-10 mx-auto mt-auto flex w-full items-end justify-center bg-white bg-opacity-10 px-4 pb-40 sm:pb-24 md:pb-32 lg:pb-48 wide:pb-24"
         ref={ref}
         style={{
           height: `${calculatedHeight}px`,
