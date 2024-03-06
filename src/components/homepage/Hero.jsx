@@ -22,7 +22,7 @@ export default function Hero({ height }) {
           transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
         }}
       >
-        <div className="mt-auto rounded-md bg-white bg-opacity-30 text-center backdrop-blur">
+        <div className="mt-auto self-end rounded-md bg-white bg-opacity-30 text-center backdrop-blur">
           <h1 className="rounded-t-lg p-8 pb-4 font-heading text-4xl font-bold tracking-tight text-primary sm:text-6xl lg:hidden">
             Your Path to<br></br>Financial Success<br></br>Starts Here
           </h1>
