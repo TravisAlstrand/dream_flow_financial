@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+// import { useRef } from "react";
+// import { useInView } from "framer-motion";
 
 import Header1 from "../Header";
 import VideoTestimonialCard from "./VideoTestimonialCard";
@@ -13,19 +13,21 @@ import {
 import NoVideoTestimonialCard from "./NoVideoTestimonialCard";
 
 export default function TestimonialsPage() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  // const ref = useRef(null);
+  // const isInView = useInView(ref);
 
   return (
     <>
       <Header1 />
       <div
         className="mx-auto mb-16 mt-24 max-w-7xl px-6 text-center font-standard"
-        ref={ref}
-        style={{
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-        }}
+        // ref={ref}
+        style={
+          {
+            // opacity: isInView ? 1 : 0,
+            // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+          }
+        }
       >
         <h1 className="mb-16 font-heading text-4xl font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl">
           Testimonials

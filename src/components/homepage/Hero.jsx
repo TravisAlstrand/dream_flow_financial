@@ -1,11 +1,11 @@
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+// import { useRef } from "react";
+// import { useInView } from "framer-motion";
 
 import CalendlyLink from "../CalendlyLink";
 
 export default function Hero({ height }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  // const ref = useRef(null);
+  // const isInView = useInView(ref);
   const calculatedHeight = window.innerHeight - height;
 
   return (
@@ -15,14 +15,14 @@ export default function Hero({ height }) {
     >
       <div
         className="z-10 mx-auto flex w-full items-end justify-center bg-white bg-opacity-10 px-4 pb-40 sm:pb-24 md:pb-32 lg:pb-48 wide:pb-24"
-        ref={ref}
+        // ref={ref}
         style={{
           height: `${calculatedHeight}px`,
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+          // opacity: isInView ? 1 : 0,
+          // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
         }}
       >
-        <div className="mt-auto self-end rounded-md bg-white bg-opacity-30 text-center backdrop-blur">
+        <div className="rounded-md bg-white bg-opacity-30 text-center backdrop-blur">
           <h1 className="rounded-t-lg p-8 pb-4 font-heading text-4xl font-bold tracking-tight text-primary sm:text-6xl lg:hidden">
             Your Path to<br></br>Financial Success<br></br>Starts Here
           </h1>

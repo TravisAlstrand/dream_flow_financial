@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { useInView } from "framer-motion";
+// import { useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { FormInput } from "./FormInput";
@@ -22,8 +22,8 @@ export default function Contact() {
   const [emailSent, setEmailSent] = useState("");
 
   const form = useRef();
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  // const ref = useRef(null);
+  // const isInView = useInView(ref);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -100,11 +100,13 @@ export default function Contact() {
     <section
       id="contact"
       className="relative isolate mx-auto flex max-w-7xl flex-col items-center bg-white px-6 pb-32 pt-24 font-standard sm:py-32 lg:px-8 wide:py-12"
-      ref={ref}
-      style={{
-        opacity: isInView ? 1 : 0,
-        transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-      }}
+      // ref={ref}
+      style={
+        {
+          // opacity: isInView ? 1 : 0,
+          // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+        }
+      }
     >
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="font-heading text-3xl font-bold tracking-tight text-primary underline decoration-secondary sm:text-4xl">

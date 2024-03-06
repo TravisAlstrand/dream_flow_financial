@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+// import { useRef } from "react";
+// import { useInView } from "framer-motion";
 // import {
 //   BanknotesIcon,
 //   ChartBarIcon,
@@ -49,8 +49,8 @@ import { useInView } from "framer-motion";
 // ];
 
 export default function Services() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  // const ref = useRef(null);
+  // const isInView = useInView(ref);
 
   return (
     <section
@@ -59,11 +59,13 @@ export default function Services() {
     >
       <div
         className="px-6 lg:px-8"
-        ref={ref}
-        style={{
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-        }}
+        // ref={ref}
+        style={
+          {
+            // opacity: isInView ? 1 : 0,
+            // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+          }
+        }
       >
         <div className="mx-auto mb-8 max-w-2xl lg:text-center">
           <h2 className="text-xl font-semibold leading-7 text-secondary">

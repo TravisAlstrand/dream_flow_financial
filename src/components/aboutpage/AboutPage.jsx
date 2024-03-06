@@ -1,54 +1,60 @@
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+// import { useRef } from "react";
+// import { useInView } from "framer-motion";
 
 import Header1 from "../Header";
 import Contact from "../contactform/Contact";
 import Footer from "../Footer";
 
 export default function AboutPage() {
-  const ref = useRef(null);
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
-  const ref4 = useRef(null);
-  const ref5 = useRef(null);
-  const isInView = useInView(ref);
-  const isInView1 = useInView(ref1);
-  const isInView2 = useInView(ref2);
-  const isInView3 = useInView(ref3);
-  const isInView4 = useInView(ref4);
-  const isInView5 = useInView(ref5);
+  // const ref = useRef(null);
+  // const ref1 = useRef(null);
+  // const ref2 = useRef(null);
+  // const ref3 = useRef(null);
+  // const ref4 = useRef(null);
+  // const ref5 = useRef(null);
+  // const isInView = useInView(ref);
+  // const isInView1 = useInView(ref1);
+  // const isInView2 = useInView(ref2);
+  // const isInView3 = useInView(ref3);
+  // const isInView4 = useInView(ref4);
+  // const isInView5 = useInView(ref5);
   return (
     <>
       <Header1 />
       <main
         className="mx-auto mt-24 max-w-4xl px-6 text-center font-standard"
-        ref={ref}
-        style={{
-          opacity: isInView ? 1 : 0,
-          transition: "all .4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-        }}
+        // ref={ref}
+        style={
+          {
+            // opacity: isInView ? 1 : 0,
+            // transition: "all .4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+          }
+        }
       >
         <h1 className="mb-16 font-heading text-4xl font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl">
           Meet Micheal
         </h1>
         <div className="flex flex-col lg:flex-row">
           <img
-            ref={ref1}
-            style={{
-              opacity: isInView1 ? 1 : 0,
-              transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-            }}
+            // ref={ref1}
+            style={
+              {
+                // opacity: isInView1 ? 1 : 0,
+                // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+              }
+            }
             className="mb-10 px-6 lg:w-1/2"
             src="images/splash-sml.jpg"
             alt="Micheal in a river splashing the water"
           />
           <p
-            ref={ref2}
-            style={{
-              opacity: isInView2 ? 1 : 0,
-              transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-            }}
+            // ref={ref2}
+            style={
+              {
+                // opacity: isInView2 ? 1 : 0,
+                // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+              }
+            }
             className="mb-10 text-lg leading-8 text-ltrGray lg:w-1/2 lg:text-left"
           >
             Welcome to{" "}
@@ -62,11 +68,13 @@ export default function AboutPage() {
           </p>
         </div>
         <p
-          ref={ref3}
-          style={{
-            opacity: isInView3 ? 1 : 0,
-            transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-          }}
+          // ref={ref3}
+          style={
+            {
+              // opacity: isInView3 ? 1 : 0,
+              // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+            }
+          }
           className="mb-10 text-lg leading-8 text-ltrGray"
         >
           With over two decades of experience in the financial industry, Micheal
@@ -80,11 +88,13 @@ export default function AboutPage() {
         </p>
         <div className="flex flex-col lg:flex-row">
           <p
-            ref={ref4}
-            style={{
-              opacity: isInView4 ? 1 : 0,
-              transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-            }}
+            // ref={ref4}
+            style={
+              {
+                // opacity: isInView4 ? 1 : 0,
+                // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+              }
+            }
             className="mb-10 text-lg leading-8 text-ltrGray lg:w-1/2 lg:text-right"
           >
             At{" "}
@@ -100,11 +110,13 @@ export default function AboutPage() {
             your success is our success.
           </p>
           <img
-            ref={ref5}
-            style={{
-              opacity: isInView5 ? 1 : 0,
-              transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-            }}
+            // ref={ref5}
+            style={
+              {
+                // opacity: isInView5 ? 1 : 0,
+                // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+              }
+            }
             className="px-6 lg:max-h-[275px] lg:w-1/2"
             src="images/green-top1.jpg"
             alt="photo of Micheal sitting on a rock at the river"

@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+// import { useRef } from "react";
+// import { useInView } from "framer-motion";
 import {
   BanknotesIcon,
   ChartBarIcon,
@@ -54,23 +54,25 @@ const services = [
 ];
 
 export default function ServicesPage() {
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
-  const isInView1 = useInView(ref1);
-  const isInView2 = useInView(ref2);
-  const isInView3 = useInView(ref3);
+  // const ref1 = useRef(null);
+  // const ref2 = useRef(null);
+  // const ref3 = useRef(null);
+  // const isInView1 = useInView(ref1);
+  // const isInView2 = useInView(ref2);
+  // const isInView3 = useInView(ref3);
 
   return (
     <>
       <Header />
       <main className="mx-auto mt-24 max-w-2xl px-6 text-center font-standard lg:max-w-4xl 2xl:max-w-7xl">
         <section
-          ref={ref1}
-          style={{
-            opacity: isInView1 ? 1 : 0,
-            transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-          }}
+          // ref={ref1}
+          style={
+            {
+              // opacity: isInView1 ? 1 : 0,
+              // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+            }
+          }
           className="border-b-2 border-secondary pb-16"
         >
           <h1 className="mb-16 font-heading text-4xl font-bold tracking-tight text-primary underline decoration-secondary sm:text-6xl">
@@ -96,11 +98,13 @@ export default function ServicesPage() {
           </p>
         </section>
         <section
-          ref={ref2}
-          style={{
-            opacity: isInView2 ? 1 : 0,
-            transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-          }}
+          // ref={ref2}
+          style={
+            {
+              // opacity: isInView2 ? 1 : 0,
+              // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+            }
+          }
           className="border-b-2 border-secondary py-16"
         >
           <h2 className="font-heading text-2xl font-semibold leading-7 text-primary">
@@ -129,11 +133,13 @@ export default function ServicesPage() {
           </div>
         </section>
         <section
-          ref={ref3}
-          style={{
-            opacity: isInView3 ? 1 : 0,
-            transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-          }}
+          // ref={ref3}
+          style={
+            {
+              // opacity: isInView3 ? 1 : 0,
+              // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+            }
+          }
           className="pt-16"
         >
           <p className="mb-10 text-lg leading-8 text-ltrGray">

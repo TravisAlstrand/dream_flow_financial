@@ -1,10 +1,10 @@
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+// import { useRef } from "react";
+// import { useInView } from "framer-motion";
 import { employees } from "../../json/employees.json";
 
 export default function About() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  // const ref = useRef(null);
+  // const isInView = useInView(ref);
 
   return (
     <section
@@ -13,11 +13,13 @@ export default function About() {
     >
       <div
         className="px-6 lg:px-8"
-        ref={ref}
-        style={{
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-        }}
+        // ref={ref}
+        style={
+          {
+            // opacity: isInView ? 1 : 0,
+            // transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+          }
+        }
       >
         <div className="max-w-2xl">
           <h2 className="font-heading text-3xl font-bold tracking-tight text-primary sm:text-4xl">
