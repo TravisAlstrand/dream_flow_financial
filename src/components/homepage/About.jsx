@@ -24,9 +24,14 @@ export default function About() {
             Meet Micheal
           </h2>
           <p className="mt-6 text-lg leading-8 text-ltrGray">
-            As the visionary founder of Dream Flow Financial, Micheal combines
-            her experience of financial expertise with a passion for empowering
-            clients to achieve their financial dreams.
+            Hello and welcome! I&apos;m Micheal Dunsdon, CPA, (pronounced
+            Michelle) a dedicated financial coach committed to empowering
+            individuals to take charge of their finances and use that money on
+            the things that <strong>truly matter to them in life</strong>. If
+            you struggle with money, budgeting, debt, savings and everything
+            related, I would <strong>LOVE</strong> to support you to get money
+            to start working for you to help you create the{" "}
+            <strong>life of your dreams</strong>!
           </p>
         </div>
         <ul role="list" className="mb-8">
