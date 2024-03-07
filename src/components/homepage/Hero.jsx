@@ -39,7 +39,7 @@ export default function Hero({ height }) {
             <CalendlyLink />
             <a
               href="#services"
-              className="rounded-md border-2 border-primary px-3 py-2.5 font-semibold leading-6 text-primary transition-colors duration-300 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="rounded-md border-2 border-secondary px-3 py-2.5 font-semibold leading-6 text-secondary transition-colors duration-300 hover:text-secondary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               Learn more <span aria-hidden="true">→</span>
             </a>

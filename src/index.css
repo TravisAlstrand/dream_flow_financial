@@ -12,7 +12,7 @@
 
 .test-quote:last-of-type {
   font-weight: bold;
-  color: #000080;
+  color: #000060;
 }
 
 .calendly-badge-widget {
@@ -30,7 +30,7 @@
 }
 
 .calendly-badge-content:hover {
-  background: #ffc500 !important;
+  background: #befff5 !important;
 }
 
 a .social-svg > path {
@@ -42,7 +42,7 @@ a .social-svg {
 }
 
 a:hover .social-svg > path {
-  fill: #ffc500;
+  fill: #6d588e;
 }
 
 a:hover .social-svg {

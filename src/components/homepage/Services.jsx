@@ -55,7 +55,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="mx-auto max-w-7xl bg-white py-24 text-center sm:py-32 wide:py-12"
+      className="mx-auto max-w-7xl bg-white py-24 text-center wide:py-12"
     >
       <div
         className="px-6 lg:px-8"
@@ -68,7 +68,7 @@ export default function Services() {
         }
       >
         <div className="mx-auto mb-8 max-w-2xl lg:text-center">
-          <h2 className="text-xl font-semibold leading-7 text-secondary">
+          <h2 className="text-xl font-semibold leading-7 text-[#8c71b7]">
             Save Faster
           </h2>
           <p className="mt-2 font-heading text-3xl font-bold text-primary sm:text-4xl">

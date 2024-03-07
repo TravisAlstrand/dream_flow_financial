@@ -7,7 +7,7 @@ export default function CalendlyLink() {
       rootElement={document.getElementById("root")}
       text="Book Now"
       textColor="#ffffff"
-      color="#D9A802"
+      color="#6fffe9"
       styles={"left: 0;"}
     />
   );

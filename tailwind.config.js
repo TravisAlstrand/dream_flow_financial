@@ -24,14 +24,14 @@ export default withMT({
     },
     colors: {
       primary: {
-        DEFAULT: "#000080",
-        light: "#0202c9",
+        DEFAULT: "#000060",
+        light: "#01018d",
         dark: "#000030",
       },
       secondary: {
-        DEFAULT: "#D9A802",
-        light: "#ffc500",
-        dark: "#a17c02",
+        DEFAULT: "#6fffe9",
+        light: "#befff5",
+        dark: "#43c0ad",
       },
       ltrGray: {
         DEFAULT: "#111827",

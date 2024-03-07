@@ -99,7 +99,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative isolate mx-auto flex max-w-7xl flex-col items-center bg-white px-6 pb-32 pt-24 font-standard sm:py-32 lg:px-8 wide:py-12"
+      className="relative isolate mx-auto flex max-w-7xl flex-col items-center bg-white px-6 pb-32 pt-24 font-standard lg:px-8 wide:py-12"
       // ref={ref}
       style={
         {

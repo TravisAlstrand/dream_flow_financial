@@ -10,7 +10,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative isolate mx-auto flex h-screen max-w-7xl flex-col items-center overflow-hidden bg-white py-24 sm:px-6 sm:py-32 lg:px-8 wide:h-fit wide:py-12"
+      className="relative isolate mx-auto flex h-screen max-w-7xl flex-col items-center overflow-hidden bg-white py-24 sm:px-6 lg:px-8 wide:h-fit wide:py-12"
       // ref={ref}
       style={
         {

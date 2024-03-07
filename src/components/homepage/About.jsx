@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="mx-auto flex max-w-7xl items-center justify-center bg-white py-24 text-center sm:py-32 wide:py-12"
+      className="mx-auto flex max-w-7xl items-center justify-center bg-white py-24 text-center wide:py-12"
     >
       <div
         className="px-6 lg:px-8"
